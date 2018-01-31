@@ -1,0 +1,23 @@
+# Example Container Policy: Public Read Access over HTTPS<a name="policies-examples-public-https"></a>
+
+This policy allows users to retrieve an object through an HTTPS request\. It allows this access to all users who are authenticated\. The statement has the name `PublicReadOverHttps`\. It allows access to the `GetObject` and `DescribeObject` operations on any object \(as specified by the \* at the end of the resource path\)\. It allows this access to absolutely anyone: all authenticated users and anonymous users \(users who are not logged in\)\. It specifies that this access has the condition of requiring HTTPS for the operations:
+
+```
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "PublicReadOverHttps",
+      "Effect": "Allow",
+      "Action": ["mediastore:GetObject", "mediastore:DescribeObject"],
+      "Principal": "*",
+      "Resource": "arn:aws:mediastore:<region>:<owner acct number>:container/<container name>/*",
+      "Condition": {
+        "Bool": {
+            "aws:SecureTransport": "true"
+        }
+      }
+    }
+  ]
+}
+```
