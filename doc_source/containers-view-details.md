@@ -6,7 +6,7 @@ Details for a container include the container policy, endpoint, ARN, and creatio
 
 1. Sign in to the AWS Elemental MediaStore console at **https://<*region*>\.console\.aws\.amazon\.com/mediastore/home/region=<*region*>**\.
 
-1. On the Containers page, choose the name of the container\. 
+1. On the **Containers** page, choose the name of the container\. 
 
    The container details page appears\. This page is divided into two sections:
 
