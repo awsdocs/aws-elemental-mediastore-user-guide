@@ -4,7 +4,7 @@ After you upload an object, AWS Elemental MediaStore stores details such as the 
 
 **To view the details of an object \(console\)**
 
-1. Sign in to the AWS Elemental MediaStore console at **https://<*region*>\.console\.aws\.amazon\.com/mediastore/home/region=<*region*>**\.
+1. Open the AWS Elemental MediaStore console at [https://console\.aws\.amazon\.com/mediastore/](https://console.aws.amazon.com/mediastore/)\.
 
 1. On the **Containers** page, choose the name of container that has the object that you want to view\.
 

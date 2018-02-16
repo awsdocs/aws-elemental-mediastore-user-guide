@@ -5,8 +5,8 @@ AWS Elemental MediaStore is a video origination and storage service that offers 
 To use the service, you upload your objects from a source, such as an encoder or data feed, to a container that you create in AWS Elemental MediaStore\.
 
 
-+ [AWS Elemental MediaStore Concepts](concepts.md)
-+ [Related Services](related-services.md)
-+ [Accessing AWS Elemental MediaStore](accessing.md)
-+ [Pricing for AWS Elemental MediaStore](pricing.md)
-+ [Regions for AWS Elemental MediaStore](regions.md)
++ [AWS Elemental MediaStore Concepts](what-is-concepts.md)
++ [Related Services](what-is-related-services.md)
++ [Accessing AWS Elemental MediaStore](what-is-accessing.md)
++ [Pricing for AWS Elemental MediaStore](what-is-pricing.md)
++ [Regions for AWS Elemental MediaStore](what-is-regions.md)

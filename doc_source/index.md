@@ -15,11 +15,11 @@ Amazon's trademarks and trade dress may not be used in
 -----
 ## Contents
 + [What Is AWS Elemental MediaStore?](what-is.md)
-   + [AWS Elemental MediaStore Concepts](concepts.md)
-   + [Related Services](related-services.md)
-   + [Accessing AWS Elemental MediaStore](accessing.md)
-   + [Pricing for AWS Elemental MediaStore](pricing.md)
-   + [Regions for AWS Elemental MediaStore](regions.md)
+   + [AWS Elemental MediaStore Concepts](what-is-concepts.md)
+   + [Related Services](what-is-related-services.md)
+   + [Accessing AWS Elemental MediaStore](what-is-accessing.md)
+   + [Pricing for AWS Elemental MediaStore](what-is-pricing.md)
+   + [Regions for AWS Elemental MediaStore](what-is-regions.md)
 + [Setting Up AWS Elemental MediaStore](setting-up.md)
    + [Signing Up for AWS](aws-sign-up.md)
    + [Creating an Admin IAM User](IAM-user-create.md)

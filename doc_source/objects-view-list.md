@@ -4,7 +4,7 @@ You can use the AWS Elemental MediaStore console to view items \(objects and fol
 
 **To view a list of objects in a specific container \(console\)**
 
-1. Sign in to the AWS Elemental MediaStore console at **https://<*region*>\.console\.aws\.amazon\.com/mediastore/home/region=<*region*>**\.
+1. Open the AWS Elemental MediaStore console at [https://console\.aws\.amazon\.com/mediastore/](https://console.aws.amazon.com/mediastore/)\.
 
 1. On the **Containers** page, choose the name of the container that has the folder that you want to view\. 
 
@@ -14,7 +14,7 @@ You can use the AWS Elemental MediaStore console to view items \(objects and fol
 
 **To view a list of objects in a specific folder \(console\)**
 
-1. Sign in to the AWS Elemental MediaStore console at **https://<*region*>\.console\.aws\.amazon\.com/mediastore/home/region=<*region*>**\.
+1. Open the AWS Elemental MediaStore console at [https://console\.aws\.amazon\.com/mediastore/](https://console.aws.amazon.com/mediastore/)\.
 
 1. On the **Containers** page, choose the name of the container that has the folder that you want to view\. 
 

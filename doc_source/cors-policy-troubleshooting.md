@@ -12,10 +12,10 @@ If you encounter unexpected behavior when you access a container that has a CORS
 
       If the header is missing, AWS Elemental MediaStore does not treat the request as a cross\-origin request and does not send CORS response headers back in the response\.
 
-   1. Verify that the `Origin` header in your request matches at least one of the `AllowedOrigin` elements in the specific `CORSRule`\.
+   1. Verify that the `Origin` header in your request matches at least one of the `AllowedOrigins` elements in the specific `CORSRule`\.
 
-      The scheme, the host, and the port values in the `Origin` request header must match the `AllowedOrigin` in the `CORSRule`\. For example, if you set `CORSRule` to allow the origin `http://www.example.com`, then both `https://www.example.com` and `http://www.example.com:80` origins in your request do not match the allowed origin in your configuration\.
+      The scheme, the host, and the port values in the `Origin` request header must match the `AllowedOrigins` in the `CORSRule`\. For example, if you set `CORSRule` to allow the origin `http://www.example.com`, then both `https://www.example.com` and `http://www.example.com:80` origins in your request do not match the allowed origin in your configuration\.
 
-   1. Verify that the method in your request \(or the method specified in the `Access-Control-Request-Method` in case of a preflight request\) is one of the `AllowedMethod` elements in the same `CORSRule`\.
+   1. Verify that the method in your request \(or the method specified in the `Access-Control-Request-Method` in case of a preflight request\) is one of the `AllowedMethods` elements in the same `CORSRule`\.
 
-   1. For a preflight request, if the request includes an `Access-Control-Request-Headers` header, verify that the `CORSRule` includes the `AllowedHeader` entries for each value in the `Access-Control-Request-Headers` header\.
+   1. For a preflight request, if the request includes an `Access-Control-Request-Headers` header, verify that the `CORSRule` includes the `AllowedHeaders` entries for each value in the `Access-Control-Request-Headers` header\.

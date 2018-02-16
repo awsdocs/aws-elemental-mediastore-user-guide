@@ -8,7 +8,7 @@ When you add a CORS policy to the container, the container policies \(that gover
 
 **To add a CORS policy \(console\)**
 
-1. Sign in to the AWS Elemental MediaStore console at **https://<*region*>\.console\.aws\.amazon\.com/mediastore/home/region=<*region*>**\.
+1. Open the AWS Elemental MediaStore console at [https://console\.aws\.amazon\.com/mediastore/](https://console.aws.amazon.com/mediastore/)\.
 
 1. On the **Containers** page, choose the name of the container that you want to create a CORS policy for\.
 
@@ -25,7 +25,7 @@ When you add a CORS policy to the container, the container policies \(that gover
   Example:
 
   ```
-  aws mediastore put-cors-policy --container-name ExampleContainer --cors-policy '[{"AllowedOrigin": ["*"],"AllowedMethod": ["GET"],"AllowedHeader": ["*"],"ExposeHeader": ["*"], "MaxAgeSeconds":3000}]' --region ap-southeast-2 --endpoint https://mediastore.ap-southeast-2.amazonaws.com/
+  aws mediastore put-cors-policy --container-name ExampleContainer --cors-policy '[{"AllowedOrigins": ["*"],"AllowedMethods": ["GET"],"AllowedHeaders": ["*"],"ExposeHeaders": ["*"], "MaxAgeSeconds":3000}]' --region ap-southeast-2 --endpoint https://mediastore.ap-southeast-2.amazonaws.com/
   ```
 
   This command has no return value\.

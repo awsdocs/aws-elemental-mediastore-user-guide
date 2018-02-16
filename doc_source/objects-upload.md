@@ -9,7 +9,7 @@ Object file names can contain only letters, numbers, periods \(\.\), underscores
 
 **To upload an object \(console\)**
 
-1. Sign in to the AWS Elemental MediaStore console at **https://<*region*>\.console\.aws\.amazon\.com/mediastore/home/region=<*region*>**\.
+1. Open the AWS Elemental MediaStore console at [https://console\.aws\.amazon\.com/mediastore/](https://console.aws.amazon.com/mediastore/)\.
 
 1. On the **Containers** page, choose the name of the container\. The details panel for the container appears\.
 
