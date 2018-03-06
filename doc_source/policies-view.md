@@ -24,5 +24,22 @@ You can use the console or the AWS CLI to view the resource\-based policy of a c
 
   ```
   {
-      "Policy": "{  \"Version\" : \"2012-10-17\",  \"Statement\" : [ {    \"Sid\" : \"MediaStoreFullAccess\",    \"Effect\" : \"Allow\",    \"Principal\" : \"*\",    \"Action\" : \"mediastore:*\",    \"Resource\" : \"arn:aws:mediastore:us-west-2:111222333444:container/ExampleLiveDemo/*\",    \"Condition\" : {      \"Bool\" : {        \"aws:SecureTransport\" : \"true\"      }    }  } ]}"
+    "Policy": {
+      "Version": "2012-10-17",
+      "Statement": [
+        {
+          "Sid": "MediaStoreFullAccess",
+          "Effect": "Allow",
+          "Principal": "*",
+          "Action": "mediastore:*",
+          "Resource": "arn:aws:mediastore:us-west-2:111222333444:container/ExampleLiveDemo/*",
+          "Condition": {
+            "Bool": {
+              "aws:SecureTransport": "true"
+            }
+          }
+        }
+      ]
+    }
+  }
   ```

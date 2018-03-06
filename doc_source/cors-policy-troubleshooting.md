@@ -4,7 +4,7 @@ If you encounter unexpected behavior when you access a container that has a CORS
 
 1. Verify that the CORS policy is attached to the container\.
 
-   For instructions, see [[ERROR] BAD/MISSING LINK TEXT](cors-policy-viewing.md)\.
+   For instructions, see [Viewing a CORS Policy](cors-policy-viewing.md)\.
 
 1. Capture the complete request and response using a tool of your choice \(such as your browser's developer console\)\. Verify that the CORS policy that is attached to the container includes at least one CORS rule that matches the data in your request, as follows:
 

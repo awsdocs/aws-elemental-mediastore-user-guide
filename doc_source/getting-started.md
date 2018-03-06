@@ -16,7 +16,7 @@ Once you have set up your AWS account and created IAM users and roles, you sign 
 
 + Sign in to the AWS Management Console and open the AWS Elemental MediaStore console at [https://console\.aws\.amazon\.com/mediastore/](https://console.aws.amazon.com/mediastore/)\.
 **Note**  
-You can login using any of the IAM credentials you have created for this account\. For information about creating IAM credentials, see [[ERROR] BAD/MISSING LINK TEXT](setting-up.md)\.
+You can login using any of the IAM credentials you have created for this account\. For information about creating IAM credentials, see [Setting Up AWS Elemental MediaStore](setting-up.md)\.
 
 ## Step 2: Create a Container<a name="gs-containers-create"></a>
 
