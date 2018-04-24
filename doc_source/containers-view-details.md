@@ -9,13 +9,10 @@ Details for a container include the container policy, endpoint, ARN, and creatio
 1. On the **Containers** page, choose the name of the container\. 
 
    The container details page appears\. This page is divided into two sections:
-
    + The **Objects** section, which lists the objects and folders in the container\.
-
    + The **Container** policy section, which shows the resource\-based policy that is associated with this container\. For information about resource policies, see [](policies.md)\.
 
 **To view the details for a container \(AWS CLI\)**
-
 + In the AWS CLI, use the **describe\-container** command\.
 
   Example:

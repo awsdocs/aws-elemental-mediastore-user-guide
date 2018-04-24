@@ -8,12 +8,11 @@ You can edit the permissions in the default container policy, or you can create 
 
 1. On the **Containers** page, choose the container name\.
 
-1. Choose **Edit policy**\. For examples that show how to set different permissions, see [Example Container Policies](policies-examples.md)\.
+1. Choose **Edit policy**\. For examples that show how to set different permissions, see [Example Container PoliciesExample CORS Policies](policies-examples.md)\.
 
 1. Make the appropriate changes, and then choose **Save**\.
 
 **To edit a container policy \(AWS CLI\)**
-
 + In the AWS CLI, use the **put\-container\-policy** command\.
 
   Example:

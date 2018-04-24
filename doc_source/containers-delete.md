@@ -11,7 +11,6 @@ You can delete a container only if it has no objects\.
 1. Choose **Delete**\.
 
 **To delete a container \(AWS CLI\)**
-
 + In the AWS CLI, use the **delete\-container** command\.
 
   Example:

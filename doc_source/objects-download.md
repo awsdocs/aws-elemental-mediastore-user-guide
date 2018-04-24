@@ -15,7 +15,6 @@ You can use the console to download an object\. You can use the AWS CLI to downl
 1. On the **Object** details page, choose **Download**\.
 
 **To download an object \(AWS CLI\)**
-
 + In the AWS CLI, use the **get\-object** command\.
 
   Example:
@@ -36,7 +35,6 @@ You can use the console to download an object\. You can use the AWS CLI to downl
   ```
 
 **To download part of an object \(AWS CLI\)**
-
 + In the AWS CLI, use the **get\-object** command, and specify a range\.
 
   Example:

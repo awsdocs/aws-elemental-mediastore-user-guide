@@ -26,7 +26,6 @@ Object file names can contain only letters, numbers, periods \(\.\), underscores
 If a file with the same name already exists in the selected folder, the service replaces the original file with the uploaded file\.
 
 **To upload an object \(AWS CLI\)**
-
 + In the AWS CLI, use the **put\-object** command\.
 
   Example:

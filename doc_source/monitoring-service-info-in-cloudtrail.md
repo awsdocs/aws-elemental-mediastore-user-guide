@@ -1,27 +1,17 @@
 # AWS Elemental MediaStore Information in CloudTrail<a name="monitoring-service-info-in-cloudtrail"></a>
 
 AWS Elemental MediaStore supports logging the following actions as events in CloudTrail log files:
-
 + [CreateContainer](http://docs.aws.amazon.com/mediastore/latest/apireference/API_CreateContainer.html)
-
 + [DeleteContainer](http://docs.aws.amazon.com/mediastore/latest/apireference/API_DeleteContainer.html)
-
 + [DeleteContainerPolicy](http://docs.aws.amazon.com/mediastore/latest/apireference/API_DeleteContainerPolicy.html)
-
 + [DescribeContainer](http://docs.aws.amazon.com/mediastore/latest/apireference/API_DescribeContainer.html)
-
 + [GetContainerPolicy](http://docs.aws.amazon.com/mediastore/latest/apireference/API_GetContainerPolicy.html)
-
 + [ListContainers](http://docs.aws.amazon.com/mediastore/latest/apireference/API_ListContainers.html)
-
 + [PutContainerPolicy](http://docs.aws.amazon.com/mediastore/latest/apireference/API_PutContainerPolicy.html)
 
 Every event or log entry contains information about who generated the request\. The identity information helps you determine the following: 
-
 + Whether the request was made with root or IAM user credentials\.
-
 + Whether the request was made with temporary security credentials for a role or federated user\.
-
 + Whether the request was made by another AWS service\.
 
 For more information, see the [CloudTrail userIdentity Element](http://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-event-reference-user-identity.html)\.

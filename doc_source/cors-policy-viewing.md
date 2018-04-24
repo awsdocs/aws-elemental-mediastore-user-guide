@@ -11,7 +11,6 @@ Cross\-origin resource sharing \(CORS\) defines a way for client web application
    The container details page appears, with the CORS policy in the **Container CORS policy** section\.
 
 **To view a CORS policy \(AWS CLI\)**
-
 + In the AWS CLI, use the `get-cors-policy` command\.
 
   Example:

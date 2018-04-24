@@ -4,10 +4,11 @@ Cross\-origin resource sharing \(CORS\) defines a way for client web application
 
 This section provides an overview of CORS\. The subtopics describe how you can enable CORS using the AWS Elemental MediaStore console, or programmatically using the AWS Elemental MediaStore REST API and the AWS SDKs\.
 
-
+**Topics**
 + [CORS Use\-case Scenarios](cors-policy-use-case-scenarios.md)
 + [Adding a CORS Policy to a Container](cors-policy-adding.md)
 + [Viewing a CORS Policy](cors-policy-viewing.md)
 + [Editing a CORS Policy](cors-policy-editing.md)
 + [Deleting a CORS Policy](cors-policy-deleting.md)
 + [Troubleshooting CORS Issues](cors-policy-troubleshooting.md)
++ [Example CORS Policies](cors-policies-examples.md)

@@ -18,7 +18,6 @@ When you delete the only object in a folder, AWS Elemental MediaStore automatica
 1.  Choose **Delete**\.
 
 **To delete an object \(AWS CLI\)**
-
 + In the AWS CLI, use the **delete\-object** command\.
 
   Example:

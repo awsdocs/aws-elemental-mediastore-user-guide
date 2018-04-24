@@ -2,7 +2,7 @@
 
 This Getting Started tutorial shows you how to use AWS Elemental MediaStore to create a container and upload an object\.
 
-
+**Topics**
 + [Step 1: Access AWS Elemental MediaStore](#gs-console-access)
 + [Step 2: Create a Container](#gs-containers-create)
 + [Step 3: Upload an Object](#gs-objects-upload)
@@ -13,7 +13,6 @@ This Getting Started tutorial shows you how to use AWS Elemental MediaStore to c
 Once you have set up your AWS account and created IAM users and roles, you sign in to the console for AWS Elemental MediaStore\.
 
 **To access AWS Elemental MediaStore**
-
 + Sign in to the AWS Management Console and open the AWS Elemental MediaStore console at [https://console\.aws\.amazon\.com/mediastore/](https://console.aws.amazon.com/mediastore/)\.
 **Note**  
 You can login using any of the IAM credentials you have created for this account\. For information about creating IAM credentials, see [Setting Up AWS Elemental MediaStore](setting-up.md)\.

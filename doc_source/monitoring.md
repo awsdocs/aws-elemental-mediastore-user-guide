@@ -1,11 +1,9 @@
 # Monitoring AWS Elemental MediaStore<a name="monitoring"></a>
 
 Monitoring is an important part of maintaining the reliability, availability, and performance of AWS Elemental MediaStore and your other AWS solutions\. AWS provides the following monitoring tools to watch AWS Elemental MediaStore, report when something is wrong, and take automatic actions when appropriate:
-
 + AWS CloudTrail is a service that captures API calls made by or on behalf of AWS Elemental MediaStore in your AWS account and delivers the log files to an Amazon S3 bucket that you specify\. CloudTrail captures API calls made from the AWS Elemental MediaStore console or from the AWS Elemental MediaStore API\. Using the information collected by CloudTrail, you can determine what request was made to AWS Elemental MediaStore, the source IP address from which the request was made, who made the request, when it was made, and so on\. To learn more about CloudTrail, including how to configure and enable it, see the [AWS CloudTrail User Guide](http://docs.aws.amazon.com/awscloudtrail/latest/userguide/)\. 
-
 + Amazon CloudWatch Events delivers a near real\-time stream of system events that describe changes in AWS resources, such as AWS Elemental MediaStore\. Using simple rules that you can quickly set up, you can match events and route them to one or more target functions or streams\. CloudWatch Events becomes aware of operational changes as they occur\. CloudWatch Events responds to these operational changes and takes corrective action as necessary, by sending messages to respond to the environment, activating functions, making changes, and capturing state information\. To learn more about CloudWatch Events, including how to configure and enable it, see the [Amazon CloudWatch Events User Guide](http://docs.aws.amazon.com/AmazonCloudWatch/latest/events/)\.
 
-
+**Topics**
 + [Logging AWS Elemental MediaStore API Calls with AWS CloudTrail](logging-using-cloudtrail.md)
 + [Automating AWS Elemental MediaStore with CloudWatch Events](monitoring-automating-with-cloudwatch-events.md)

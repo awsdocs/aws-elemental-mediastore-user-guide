@@ -15,9 +15,7 @@ Create IAM users for the individuals who require access to AWS Elemental MediaSt
 1. On the **Set permissions for user** page, choose **Add user to group**\.
 
 1. In the group list, choose the group with the appropriate attached policy\. Remember that permissions levels are as follows:
-
    + The **MediaStoreAdmins** group has permissions that allow all actions on all resources in AWS Elemental MediaStore\.
-
    + The **MediaStoreReaders** group has permissions that allow read\-only rights for all resources in AWS Elemental MediaStore\.
 
 1. Choose **Next: Review** to see the list of group memberships to be added to the new user\. 

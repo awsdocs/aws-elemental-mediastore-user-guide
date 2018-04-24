@@ -13,7 +13,6 @@ You can create up to 100 containers for each AWS account\. However, there is no 
 1. Choose **Create container**\. AWS Elemental MediaStore adds the new container to a list of containers\. Initially, the status of the container is **Creating**, and then it changes to **Active**\.
 
 **To create a container \(AWS CLI\)**
-
 + In the AWS CLI, use the **create\-container** command\.
 
   Example:

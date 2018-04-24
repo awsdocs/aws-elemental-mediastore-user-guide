@@ -11,25 +11,18 @@ When a file is uploaded to a container or removed from a container, two events a
 For information on subscribing to these events, see [Amazon CloudWatch](http://docs.aws.amazon.com/cloudwatch/)\.
 
 The actions that can be automatically triggered include the following:
-
 + Invoking an AWS Lambda function
-
 + Invoking Amazon EC2 Run Command
-
 + Relaying the event to Amazon Kinesis Data Streams
-
 + Activating an AWS Step Functions state machine
-
 + Notifying an Amazon SNS topic or an AWS SMS queue
 
 Some examples of using CloudWatch Events with AWS Elemental MediaStore include:
-
 + Activating a Lambda function whenever a container is created\.
-
 + Notifying an Amazon SNS topic when an object is deleted\.
 
 For more information, see the [Amazon CloudWatch Events User Guide](http://docs.aws.amazon.com/AmazonCloudWatch/latest/events/)\.
 
-
+**Topics**
 + [AWS Elemental MediaStore Object Upload State\-change Event](monitoring-cloudwatch-events-object-upload-state-change.md)
 + [AWS Elemental MediaStore Container State\-change Event](monitoring-cloudwatch-events-container-state-change.md)

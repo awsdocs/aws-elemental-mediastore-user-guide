@@ -19,7 +19,5 @@ You can create a user group for each policy and assign users to a group rather t
 1. On the **Review** page, verify that the correct policies are added to this group, and then choose **Create Group**\.
 
 1. On the **Groups** page, repeat steps 1\-7 to create a user group with a read\-only permissions\. Use the following guidelines:
-
    + In step 2, type a group name such as **MediaStoreReaders**\.
-
    + In step 4, choose the **MediaStoreReadOnlyAccess** policy\.

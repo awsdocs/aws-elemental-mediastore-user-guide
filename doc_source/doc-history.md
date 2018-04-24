@@ -1,9 +1,7 @@
 # Document History for User Guide<a name="doc-history"></a>
 
 The following table describes the documentation for this release of AWS Elemental MediaStore\.
-
 + **API version:** November 27, 2017
-
 + **Latest documentation update:** November 27, 2017
 
 

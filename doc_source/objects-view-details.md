@@ -15,7 +15,6 @@ After you upload an object, AWS Elemental MediaStore stores details such as the 
    A details page appears, showing information about the object\.
 
 **To view the details of an object \(AWS CLI\)**
-
 + In the AWS CLI, use the **describe\-object** command\.
 
   Example:

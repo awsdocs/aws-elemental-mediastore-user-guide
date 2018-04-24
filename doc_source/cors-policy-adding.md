@@ -19,7 +19,6 @@ When you add a CORS policy to the container, the [container policies](policies.m
 1. Insert the policy in JSON format, and then choose **Save**\.
 
 **To add a CORS policy \(AWS CLI\)**
-
 + In the AWS CLI, use the `put-cors-policy` command\.
 
   Example:

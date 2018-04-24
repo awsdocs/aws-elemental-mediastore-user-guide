@@ -4,6 +4,6 @@ AWS Elemental MediaStore is integrated with AWS CloudTrail, a service that provi
 
 To learn more about CloudTrail, including how to configure and enable it, see the [AWS CloudTrail User Guide](http://docs.aws.amazon.com/awscloudtrail/latest/userguide/)\.
 
-
+**Topics**
 + [AWS Elemental MediaStore Information in CloudTrail](monitoring-service-info-in-cloudtrail.md)
 + [Example: AWS Elemental MediaStore Log File Entries](monitoring-example-log-file-entries.md)
