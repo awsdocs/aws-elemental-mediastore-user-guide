@@ -4,9 +4,9 @@ Amazon CloudWatch Events enables you to automate your AWS services and respond a
 
 When a file is uploaded to a container or removed from a container, two events are fired in succession in the CloudWatch service:
 
-1. AWS Elemental MediaStore Object State Change
+1. [AWS Elemental MediaStore Object State Change Event](monitoring-cloudwatch-events-object-state-change.md)
 
-1. AWS Elemental MediaStoreContainer State Change event
+1. [AWS Elemental MediaStore Container State Change Event](monitoring-cloudwatch-events-container-state-change.md)
 
 For information on subscribing to these events, see [Amazon CloudWatch](http://docs.aws.amazon.com/cloudwatch/)\.
 
@@ -24,5 +24,5 @@ Some examples of using CloudWatch Events with AWS Elemental MediaStore include:
 For more information, see the [Amazon CloudWatch Events User Guide](http://docs.aws.amazon.com/AmazonCloudWatch/latest/events/)\.
 
 **Topics**
-+ [AWS Elemental MediaStore Object Upload State\-change Event](monitoring-cloudwatch-events-object-upload-state-change.md)
-+ [AWS Elemental MediaStore Container State\-change Event](monitoring-cloudwatch-events-container-state-change.md)
++ [AWS Elemental MediaStore Object State Change Event](monitoring-cloudwatch-events-object-state-change.md)
++ [AWS Elemental MediaStore Container State Change Event](monitoring-cloudwatch-events-container-state-change.md)

@@ -1,6 +1,6 @@
 # Setting Up AWS Elemental MediaStore<a name="setting-up"></a>
 
-Before you start using AWS Elemental MediaStore, you need to sign up for AWS \(if you don’t already have an AWS account\) and create IAM users and roles to allow access to AWS Elemental MediaStore\. This includes creating an IAM role for yourself\.
+Before you start using AWS Elemental MediaStore, you need to sign up for AWS \(if you don’t already have an AWS account\) and create IAM users and roles to allow access to MediaStore\. This includes creating an IAM role for yourself\.
 
 **Topics**
 + [Signing Up for AWS](aws-sign-up.md)

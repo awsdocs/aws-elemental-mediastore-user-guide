@@ -1,4 +1,4 @@
-# AWS Elemental MediaStore Object Upload State\-change Event<a name="monitoring-cloudwatch-events-object-upload-state-change"></a>
+# AWS Elemental MediaStore Object State Change Event<a name="monitoring-cloudwatch-events-object-state-change"></a>
 
 This event is published when an object's state has changed \(when the object has been uploaded or deleted\)\. For information on subscribing to this event, see [Amazon CloudWatch](http://docs.aws.amazon.com/cloudwatch/)\.
 
@@ -8,7 +8,7 @@ This event is published when an object's state has changed \(when the object has
 {
   "version": "1",
   "id": "6a7e8feb-b491-4cf7-a9f1-bf3703467718",
-  "detail-type": "MediaStore Object Upload State Change",
+  "detail-type": "MediaStore Object State Change",
   "source": "aws.mediastore",
   "account": "111122223333",
   "time": "2017-02-22T18:43:48Z",
@@ -32,7 +32,7 @@ This event is published when an object's state has changed \(when the object has
 {
   "version": "1",
   "id": "6a7e8feb-b491-4cf7-a9f1-bf3703467718",
-  "detail-type": "MediaStore Object Upload State Change",
+  "detail-type": "MediaStore Object State Change",
   "source": "aws.mediastore",
   "account": "111122223333",
   "time": "2017-02-22T18:43:48Z",

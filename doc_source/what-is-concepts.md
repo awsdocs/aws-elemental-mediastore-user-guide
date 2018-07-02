@@ -1,4 +1,4 @@
-# AWS Elemental MediaStore Concepts<a name="what-is-concepts"></a>
+# AWS Elemental MediaStore Concepts and Terminology<a name="what-is-concepts"></a>
 
 ARN  
 An [Amazon Resource Name](http://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html)\.

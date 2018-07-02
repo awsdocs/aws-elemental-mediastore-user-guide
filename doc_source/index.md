@@ -15,7 +15,7 @@ Amazon's trademarks and trade dress may not be used in
 -----
 ## Contents
 + [What Is AWS Elemental MediaStore?](what-is.md)
-   + [AWS Elemental MediaStore Concepts](what-is-concepts.md)
+   + [AWS Elemental MediaStore Concepts and Terminology](what-is-concepts.md)
    + [Related Services](what-is-related-services.md)
    + [Accessing AWS Elemental MediaStore](what-is-accessing.md)
    + [Pricing for AWS Elemental MediaStore](what-is-pricing.md)
@@ -73,8 +73,8 @@ Amazon's trademarks and trade dress may not be used in
       + [AWS Elemental MediaStore Information in CloudTrail](monitoring-service-info-in-cloudtrail.md)
       + [Example: AWS Elemental MediaStore Log File Entries](monitoring-example-log-file-entries.md)
    + [Automating AWS Elemental MediaStore with CloudWatch Events](monitoring-automating-with-cloudwatch-events.md)
-      + [AWS Elemental MediaStore Object Upload State-change Event](monitoring-cloudwatch-events-object-upload-state-change.md)
-      + [AWS Elemental MediaStore Container State-change Event](monitoring-cloudwatch-events-container-state-change.md)
+      + [AWS Elemental MediaStore Object State Change Event](monitoring-cloudwatch-events-object-state-change.md)
+      + [AWS Elemental MediaStore Container State Change Event](monitoring-cloudwatch-events-container-state-change.md)
 + [Working with Content Delivery Networks (CDNs)](cdns.md)
    + [Allowing Amazon CloudFront to Access Your AWS Elemental MediaStore Container](cdns-allowing-cloudfront-to-access-mediastore.md)
 + [Limits in AWS Elemental MediaStore](limits.md)
