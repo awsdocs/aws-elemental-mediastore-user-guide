@@ -6,4 +6,3 @@ Monitoring is an important part of maintaining the reliability, availability, an
 
 **Topics**
 + [Logging AWS Elemental MediaStore API Calls with AWS CloudTrail](logging-using-cloudtrail.md)
-+ [Automating AWS Elemental MediaStore with CloudWatch Events](monitoring-automating-with-cloudwatch-events.md)

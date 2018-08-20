@@ -5,7 +5,7 @@ The following table describes limits in AWS Elemental MediaStore\. For informati
 
 | Resource | Default Limit | 
 | --- | --- | 
-| Containers | 100 \(can request more\) | 
+| Containers | 100 | 
 | Folders | Unlimited | 
 | Levels of Folders | 10 | 
 | Object Size | 10 MB | 

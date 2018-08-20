@@ -26,12 +26,14 @@ Object file names can contain only letters, numbers, periods \(\.\), underscores
 If a file with the same name already exists in the selected folder, the service replaces the original file with the uploaded file\.
 
 **To upload an object \(AWS CLI\)**
-+ In the AWS CLI, use the **put\-object** command\.
++ In the AWS CLI, use the **put\-object** command\. You can also include any of the following parameters: `content-type`, `cache-control` \(to allow the caller to control the object's cache behavior\), and `path` \(to put the object in a folder within the container\)\.
+**Note**  
+After you upload the object, you can’t edit the `content-type`, `cache-control`, or `path`\.
 
   Example:
 
   ```
-  aws mediastore-data --region us-west-2 put-object --endpoint=https://aaabbbcccdddee.data.mediastore.us-west-2.amazonaws.com --body=README.md --path=/test/document/README3.md
+  aws mediastore-data --region us-west-2 put-object --endpoint=https://aaabbbcccdddee.data.mediastore.us-west-2.amazonaws.com --body=README.md --path=/test/document/README3.md --cache-control “max-age=6, public” --content-type binary/octet-stream
   ```
 
   Example return value:
