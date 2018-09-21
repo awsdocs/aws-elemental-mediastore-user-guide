@@ -3,7 +3,7 @@
 You can view a list of all the containers that are associated with your account\.
 
 **To view a list of containers \(console\)**
-+ Open the AWS Elemental MediaStore console at [https://console\.aws\.amazon\.com/mediastore/](https://console.aws.amazon.com/mediastore/)\.
++ Open the MediaStore console at [https://console\.aws\.amazon\.com/mediastore/](https://console.aws.amazon.com/mediastore/)\.
 
   The **Containers** page appears, listing all the containers that are associated with your account\.
 

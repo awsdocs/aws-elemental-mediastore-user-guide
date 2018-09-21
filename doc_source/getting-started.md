@@ -13,7 +13,7 @@ This Getting Started tutorial shows you how to use AWS Elemental MediaStore to c
 Once you have set up your AWS account and created IAM users and roles, you sign in to the console for AWS Elemental MediaStore\.
 
 **To access AWS Elemental MediaStore**
-+ Sign in to the AWS Management Console and open the AWS Elemental MediaStore console at [https://console\.aws\.amazon\.com/mediastore/](https://console.aws.amazon.com/mediastore/)\.
++ Sign in to the AWS Management Console and open the MediaStore console at [https://console\.aws\.amazon\.com/mediastore/](https://console.aws.amazon.com/mediastore/)\.
 **Note**  
 You can login using any of the IAM credentials you have created for this account\. For information about creating IAM credentials, see [Setting Up AWS Elemental MediaStore](setting-up.md)\.
 
@@ -31,7 +31,7 @@ You use containers in AWS Elemental MediaStore to store your folders and objects
 
 ## Step 3: Upload an Object<a name="gs-objects-upload"></a>
 
-You can upload objects \(up to 10 MB each\) to a container or to a folder within a container\. To upload an object to a folder, you specify the path to the folder\. If the folder already exists, AWS Elemental MediaStore stores the object in the folder\. If the folder doesn’t exist, the service creates it, and then stores the object in the folder\. 
+You can upload objects \(up to 20 MB each\) to a container or to a folder within a container\. To upload an object to a folder, you specify the path to the folder\. If the folder already exists, AWS Elemental MediaStore stores the object in the folder\. If the folder doesn’t exist, the service creates it, and then stores the object in the folder\. 
 
 **Note**  
 Object file names can contain only letters, numbers, periods \(\.\), underscores \(\_\), tildes \(\~\), and hyphens \(\-\)\.

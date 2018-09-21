@@ -4,11 +4,11 @@ You can edit the permissions in the default container policy, or you can create 
 
 **To edit a container policy \(console\)**
 
-1. Open the AWS Elemental MediaStore console at [https://console\.aws\.amazon\.com/mediastore/](https://console.aws.amazon.com/mediastore/)\.
+1. Open the MediaStore console at [https://console\.aws\.amazon\.com/mediastore/](https://console.aws.amazon.com/mediastore/)\.
 
 1. On the **Containers** page, choose the container name\.
 
-1. Choose **Edit policy**\. For examples that show how to set different permissions, see [Example Container PoliciesExample CORS Policies](policies-examples.md)\.
+1. Choose **Edit policy**\. For examples that show how to set different permissions, see [Example Container Policies](policies-examples.md)\.
 
 1. Make the appropriate changes, and then choose **Save**\.
 

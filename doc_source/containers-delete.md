@@ -4,7 +4,7 @@ You can delete a container only if it has no objects\.
 
 **To delete a container \(console\)**
 
-1. Open the AWS Elemental MediaStore console at [https://console\.aws\.amazon\.com/mediastore/](https://console.aws.amazon.com/mediastore/)\.
+1. Open the MediaStore console at [https://console\.aws\.amazon\.com/mediastore/](https://console.aws.amazon.com/mediastore/)\.
 
 1. On the **Containers** page, choose the radio button to the left of the container name\.
 

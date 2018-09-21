@@ -7,7 +7,7 @@ When you delete the only object in a folder, AWS Elemental MediaStore automatica
 
 **To delete an object \(console\)**
 
-1. Open the AWS Elemental MediaStore console at [https://console\.aws\.amazon\.com/mediastore/](https://console.aws.amazon.com/mediastore/)\.
+1. Open the MediaStore console at [https://console\.aws\.amazon\.com/mediastore/](https://console.aws.amazon.com/mediastore/)\.
 
 1. On the **Containers** page, choose the name of container that has the object that you want to delete\.
 

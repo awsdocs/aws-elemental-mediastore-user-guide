@@ -8,7 +8,7 @@ When you add a CORS policy to the container, the [container policies](policies.m
 
 **To add a CORS policy \(console\)**
 
-1. Open the AWS Elemental MediaStore console at [https://console\.aws\.amazon\.com/mediastore/](https://console.aws.amazon.com/mediastore/)\.
+1. Open the MediaStore console at [https://console\.aws\.amazon\.com/mediastore/](https://console.aws.amazon.com/mediastore/)\.
 
 1. On the **Containers** page, choose the name of the container that you want to create a CORS policy for\.
 

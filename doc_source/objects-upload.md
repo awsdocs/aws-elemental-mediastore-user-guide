@@ -1,6 +1,6 @@
 # Uploading an Object<a name="objects-upload"></a>
 
-You can upload objects \(up to 10 MB each\) to a container or to a folder within a container\. To upload an object to a folder, you specify the path to the folder\. If the folder already exists, AWS Elemental MediaStore stores the object in the folder\. If the folder doesn’t exist, the service creates it, and then stores the object in the folder\. For more information about folders, see [Working with Folders in AWS Elemental MediaStore](folders.md)\.
+You can upload objects \(up to 20 MB each\) to a container or to a folder within a container\. To upload an object to a folder, you specify the path to the folder\. If the folder already exists, AWS Elemental MediaStore stores the object in the folder\. If the folder doesn’t exist, the service creates it, and then stores the object in the folder\. For more information about folders, see [Working with Folders in AWS Elemental MediaStore](folders.md)\.
 
 You can use the AWS Elemental MediaStore console or the AWS CLI to upload objects\. 
 
@@ -9,7 +9,7 @@ Object file names can contain only letters, numbers, periods \(\.\), underscores
 
 **To upload an object \(console\)**
 
-1. Open the AWS Elemental MediaStore console at [https://console\.aws\.amazon\.com/mediastore/](https://console.aws.amazon.com/mediastore/)\.
+1. Open the MediaStore console at [https://console\.aws\.amazon\.com/mediastore/](https://console.aws.amazon.com/mediastore/)\.
 
 1. On the **Containers** page, choose the name of the container\. The details panel for the container appears\.
 

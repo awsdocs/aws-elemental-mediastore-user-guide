@@ -4,7 +4,7 @@ Cross\-origin resource sharing \(CORS\) defines a way for client web application
 
 **To view a CORS policy \(console\)**
 
-1. Open the AWS Elemental MediaStore console at [https://console\.aws\.amazon\.com/mediastore/](https://console.aws.amazon.com/mediastore/)\.
+1. Open the MediaStore console at [https://console\.aws\.amazon\.com/mediastore/](https://console.aws.amazon.com/mediastore/)\.
 
 1. On the **Containers** page, choose the name of the container that you want to view the CORS policy for\.
 

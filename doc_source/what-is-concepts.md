@@ -1,7 +1,7 @@
 # AWS Elemental MediaStore Concepts and Terminology<a name="what-is-concepts"></a>
 
 ARN  
-An [Amazon Resource Name](http://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html)\.
+An [Amazon Resource Name](https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html)\.
 
 Body  
 The data to be uploaded into an object\.
@@ -25,7 +25,7 @@ Item
 A term used to refer to objects and folders\.
 
 Object  
-An asset, similar to an [Amazon S3 object](http://docs.aws.amazon.com/s3/)\. Objects are the fundamental entities that are stored in AWS Elemental MediaStore\. The service accepts all file types\.
+An asset, similar to an [Amazon S3 object](https://docs.aws.amazon.com/s3/)\. Objects are the fundamental entities that are stored in AWS Elemental MediaStore\. The service accepts all file types\.
 
 Origination service  
 AWS Elemental MediaStore is considered an *origination service* because it is the point of distribution for media content delivery\.
@@ -37,7 +37,7 @@ Part
 A subset of data \(chunk\) of an object\.
 
 Policy  
-An [IAM policy](http://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html)\.
+An [IAM policy](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html)\.
 
 **AWS Elemental MediaStore verbs**Create  
 Creates an object, often implemented with HTTP POST\.

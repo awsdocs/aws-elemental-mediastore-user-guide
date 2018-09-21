@@ -1,3 +1,3 @@
 # Regions for AWS Elemental MediaStore<a name="what-is-regions"></a>
 
-To reduce data latency in your applications, AWS Elemental MediaStore offers a regional endpoint to make your requests\. To view the list of regions in which MediaStore is available, see [http://docs.aws.amazon.com/general/latest/gr/rande.html#mediastore_region](http://docs.aws.amazon.com/general/latest/gr/rande.html#mediastore_region)\.
+To reduce data latency in your applications, AWS Elemental MediaStore offers a regional endpoint to make your requests\. To view the list of regions in which MediaStore is available, see [https://docs.aws.amazon.com/general/latest/gr/rande.html#mediastore_region](https://docs.aws.amazon.com/general/latest/gr/rande.html#mediastore_region)\.
