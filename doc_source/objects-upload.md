@@ -1,6 +1,6 @@
 # Uploading an Object<a name="objects-upload"></a>
 
-You can upload objects \(up to 20 MB each\) to a container or to a folder within a container\. To upload an object to a folder, you specify the path to the folder\. If the folder already exists, AWS Elemental MediaStore stores the object in the folder\. If the folder doesn’t exist, the service creates it, and then stores the object in the folder\. For more information about folders, see [Working with Folders in AWS Elemental MediaStore](folders.md)\.
+You can upload objects \(up to 25 MB each\) to a container or to a folder within a container\. To upload an object to a folder, you specify the path to the folder\. If the folder already exists, AWS Elemental MediaStore stores the object in the folder\. If the folder doesn’t exist, the service creates it, and then stores the object in the folder\. For more information about folders, see [Working with Folders in AWS Elemental MediaStore](folders.md)\.
 
 You can use the AWS Elemental MediaStore console or the AWS CLI to upload objects\. 
 
@@ -15,7 +15,7 @@ Object file names can contain only letters, numbers, periods \(\.\), underscores
 
 1. Choose **Upload object**\.
 
-1. For **Target path**, type a path for the folders\. For example, premium/canada\. If any of the folders in the path that you specify don’t exist yet, the service creates them automatically\.
+1. For **Target path**, type a path for the folders\. For example, `premium/canada`\. If any of the folders in the path that you specify don’t exist yet, the service creates them automatically\.
 
 1. In the **Object** section, choose **Browse**\.
 
@@ -26,17 +26,15 @@ Object file names can contain only letters, numbers, periods \(\.\), underscores
 If a file with the same name already exists in the selected folder, the service replaces the original file with the uploaded file\.
 
 **To upload an object \(AWS CLI\)**
-+ In the AWS CLI, use the **put\-object** command\. You can also include any of the following parameters: `content-type`, `cache-control` \(to allow the caller to control the object's cache behavior\), and `path` \(to put the object in a folder within the container\)\.
++ In the AWS CLI, use the `put-object` command\. You can also include any of the following parameters: `content-type`, `cache-control` \(to allow the caller to control the object's cache behavior\), and `path` \(to put the object in a folder within the container\)\.
 **Note**  
 After you upload the object, you can’t edit the `content-type`, `cache-control`, or `path`\.
 
-  Example:
-
   ```
-  aws mediastore-data --region us-west-2 put-object --endpoint=https://aaabbbcccdddee.data.mediastore.us-west-2.amazonaws.com --body=README.md --path=/test/document/README3.md --cache-control “max-age=6, public” --content-type binary/octet-stream
+  aws mediastore-data --region us-west-2 put-object --endpoint=https://aaabbbcccdddee.data.mediastore.us-west-2.amazonaws.com --body=README.md --path=/test/document/README3.md --cache-control "max-age=6, public" --content-type binary/octet-stream
   ```
 
-  Example return value:
+  The following example shows the return value:
 
   ```
   {

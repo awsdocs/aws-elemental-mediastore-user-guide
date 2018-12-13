@@ -1,6 +1,6 @@
 # Example Container Policies<a name="policies-examples"></a>
 
-The following examples show container policies constructed for different user groups\.
+The following examples show container policies that are constructed for different user groups\.
 
 **Topics**
 + [Example Container Policy: Default](policies-examples-default.md)

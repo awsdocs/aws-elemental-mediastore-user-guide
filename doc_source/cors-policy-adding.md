@@ -21,8 +21,6 @@ When you add a CORS policy to the container, the [container policies](policies.m
 **To add a CORS policy \(AWS CLI\)**
 + In the AWS CLI, use the `put-cors-policy` command\.
 
-  Example:
-
   ```
   aws mediastore put-cors-policy --container-name ExampleContainer --cors-policy '[{"AllowedOrigins": ["*"],"AllowedMethods": ["GET"],"AllowedHeaders": ["*"],"ExposeHeaders": ["*"], "MaxAgeSeconds":3000}]' --region ap-southeast-2 --endpoint https://mediastore.ap-southeast-2.amazonaws.com/
   ```

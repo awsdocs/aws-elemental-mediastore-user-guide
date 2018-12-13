@@ -31,7 +31,7 @@ You use containers in AWS Elemental MediaStore to store your folders and objects
 
 ## Step 3: Upload an Object<a name="gs-objects-upload"></a>
 
-You can upload objects \(up to 20 MB each\) to a container or to a folder within a container\. To upload an object to a folder, you specify the path to the folder\. If the folder already exists, AWS Elemental MediaStore stores the object in the folder\. If the folder doesn’t exist, the service creates it, and then stores the object in the folder\. 
+You can upload objects \(up to 25 MB each\) to a container or to a folder within a container\. To upload an object to a folder, you specify the path to the folder\. If the folder already exists, AWS Elemental MediaStore stores the object in the folder\. If the folder doesn’t exist, the service creates it, and then stores the object in the folder\. 
 
 **Note**  
 Object file names can contain only letters, numbers, periods \(\.\), underscores \(\_\), tildes \(\~\), and hyphens \(\-\)\.

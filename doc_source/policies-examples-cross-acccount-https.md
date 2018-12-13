@@ -1,6 +1,6 @@
 # Example Container Policy: Cross\-Account Read Access over HTTPS<a name="policies-examples-cross-acccount-https"></a>
 
-This policy allows access to the `GetObject` and `DescribeObject` operations on any object \(as specified by the \* at the end of the resource path\) that is owned by root user user of the specified <other acct number>\. It specifies that this access has the condition of requiring HTTPS for the operations:
+This example policy allows access to the `GetObject` and `DescribeObject` operations on any object \(as specified by the \* at the end of the resource path\) that is owned by root user user of the specified <other acct number>\. It specifies that this access has the condition of requiring HTTPS for the operations:
 
 ```
 {

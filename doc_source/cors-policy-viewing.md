@@ -11,15 +11,13 @@ Cross\-origin resource sharing \(CORS\) defines a way for client web application
    The container details page appears, with the CORS policy in the **Container CORS policy** section\.
 
 **To view a CORS policy \(AWS CLI\)**
-+ In the AWS CLI, use the `get-cors-policy` command\.
-
-  Example:
++ In the AWS CLI, use the `get-cors-policy` command:
 
   ```
   aws mediastore get-cors-policy --container-name ExampleContainer --region ap-southeast-2 --endpoint https://mediastore.ap-southeast-2.amazonaws.com/
   ```
 
-  Example return value:
+  The following example shows the return value:
 
   ```
   [

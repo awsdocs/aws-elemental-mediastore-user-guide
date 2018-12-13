@@ -8,15 +8,13 @@ You can view a list of all the containers that are associated with your account\
   The **Containers** page appears, listing all the containers that are associated with your account\.
 
 **To view a list of containers \(AWS CLI\)**
-+ In the AWS CLI, use the **list\-containers** command\.
-
-  Example:
++ In the AWS CLI, use the `list-containers` command\.
 
   ```
   aws mediastore –-region us-west-2 list-containers
   ```
 
-  Example return value:
+  The following example shows the return value:
 
   ```
   {

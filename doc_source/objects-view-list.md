@@ -21,15 +21,13 @@ You can use the AWS Elemental MediaStore console to view items \(objects and fol
    A details page appears, showing all folders and objects that are stored in the container\.
 
 **To view a list of objects and folders in a specific container \(AWS CLI\)**
-+ In the AWS CLI, use the **list\-items** command\.
-
-  Example:
++ In the AWS CLI, use the `list-items` command:
 
   ```
   aws mediastore-data --region us-west-2 list-items --endpoint=https://aaabbbcccdddee.data.mediastore.us-west-2.amazonaws.com
   ```
 
-  Example return value:
+  The following example shows the return value:
 
   ```
   {
@@ -47,15 +45,13 @@ You can use the AWS Elemental MediaStore console to view items \(objects and fol
   ```
 
 **To view a list of objects and folders in a specific folder \(AWS CLI\)**
-+ In the AWS CLI, use the **list\-items** command, with the specified folder name at the end of the request\.
-
-  Example:
++ In the AWS CLI, use the `list-items` command, with the specified folder name at the end of the request:
 
   ```
   aws mediastore-data --region us-west-2 list-items --endpoint=https://aaabbbcccdddee.data.mediastore.us-west-2.amazonaws.com --path=/folder_1
   ```
 
-  Example return value:
+  The following example shows the return value:
 
   ```
   {

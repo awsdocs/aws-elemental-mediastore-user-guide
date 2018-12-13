@@ -1,6 +1,6 @@
 # Example Container Policy: Cross\-Account Full Access to a Role<a name="policies-examples-cross-acccount-full"></a>
 
-This policy allows users with cross\-account access to update any object in the account, as long as the user is logged in over HTTP\. It also allows users with cross\-account access to delete, download, and describe objects over HTTP or HTTPS:
+This example policy allows cross\-account access to update any object in the account, as long as the user is logged in over HTTP\. It also allows cross\-account access to delete, download, and describe objects over HTTP or HTTPS to an account that has assumed the specified role:
 + The first statement is `CrossAccountRolePostOverHttps`\. It allows access to the `PutObject` operation on any object and allows this access to any user of the specified account if that account has assumed the role that is specified in <role name>\. It specifies that this access has the condition of requiring HTTPS for the operation \(this condition must always be included when providing access to `PutObject`\)\.
 
   In other words, any principal that has cross\-account access can access `PutObject`, but only over HTTPS\.

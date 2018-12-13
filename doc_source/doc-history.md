@@ -1,11 +1,11 @@
 # Document History for User Guide<a name="doc-history"></a>
 
 The following table describes the documentation for this release of AWS Elemental MediaStore\. For notification about updates to this documentation, you can subscribe to an RSS feed\.
-+ **API version:** February 7, 2018
-+ **Latest documentation update:** July 12, 2018
 
 | Change | Description | Date | 
 | --- |--- |--- |
+| [Object lifecycle policies](policies-object-lifecycle.md) | Added support for object lifecycle policies, which govern the expiration date of objects within the current container\. | December 12, 2018 | 
+| [Increased object size limit](limits.md) | The limit for an object's size is now 25 MB\. | October 10, 2018 | 
 | [Increased object size limit](limits.md) | The limit for an object's size is now 20 MB\. | September 6, 2018 | 
 | [AWS CloudTrail integration](logging-using-cloudtrail.md) | The CloudTrail integration content has been updated to align with recent changes to the CloudTrail service\. | July 12, 2018 | 
 | [CDN collaboration](cdns.md) | Added information about how to use AWS Elemental MediaStore with a content delivery network \(CDN\) such as Amazon CloudFront\. | April 14, 2018 | 

@@ -13,15 +13,13 @@ Details for a container include the container policy, endpoint, ARN, and creatio
    + The **Container** policy section, which shows the resource\-based policy that is associated with this container\. For information about resource policies, see [](policies.md)\.
 
 **To view the details for a container \(AWS CLI\)**
-+ In the AWS CLI, use the **describe\-container** command\.
-
-  Example:
++ In the AWS CLI, use the `describe-container` command:
 
   ```
   aws mediastore --region us-west-2 describe-container -–container-name=ExampleContainer
   ```
 
-  Example return value:
+  The following example shows the return value:
 
   ```
   {

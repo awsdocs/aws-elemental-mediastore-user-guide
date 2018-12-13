@@ -6,7 +6,7 @@ You can create a user group for each policy and assign users to a group rather t
 
 1. In the navigation pane of the IAM console, choose **Groups**, and then choose **Create New Group**\. 
 
-1. On the **Set Group Name** page, type a name for the group, such as **MediaStoreAdmins**\.
+1. On the **Set Group Name** page, type a name for the group, such as `MediaStoreAdmins`\.
 
 1. Choose **Next Step**\.
 

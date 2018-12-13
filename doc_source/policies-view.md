@@ -11,15 +11,13 @@ You can use the console or the AWS CLI to view the resource\-based policy of a c
    The container details page appears\. The policy is displayed in the **Container policy** section\. 
 
 **To view a container policy \(AWS CLI\)**
-+ In the AWS CLI, use the **get\-container\-policy** command\.
-
-  Example:
++ In the AWS CLI, use the `get-container-policy` command:
 
   ```
   aws mediastore get-container-policy --container-name=ExampleLiveDemo –-region us-west-2
   ```
 
-  Example return value
+  The following example shows the return value:
 
   ```
   {

@@ -1,6 +1,6 @@
 # Editing a Container Policy<a name="policies-edit"></a>
 
-You can edit the permissions in the default container policy, or you can create a new policy that replaces the default policy\. It takes 5 minutes for the new policy to become effective\. 
+You can edit the permissions in the default container policy, or you can create a new policy that replaces the default policy\. It takes up to five minutes for the new policy to take effect\. 
 
 **To edit a container policy \(console\)**
 
@@ -13,9 +13,7 @@ You can edit the permissions in the default container policy, or you can create 
 1. Make the appropriate changes, and then choose **Save**\.
 
 **To edit a container policy \(AWS CLI\)**
-+ In the AWS CLI, use the **put\-container\-policy** command\.
-
-  Example:
++ In the AWS CLI, use the `put-container-policy` command:
 
   ```
   aws mediastore put-container-policy –-region us-west-2 –-container-name ExampleLiveDemo –-policy-name=default –-policy={\"Version\" : \"2012-10-17\",  \"Statement\" : [ {    \"Sid\" : \"MediaStoreFullAccess\",    \"Effect\" : \"Allow\",    \"Principal\" : \"*\",    \"Action\" : \"mediastore:*\",    \"Resource\" : \"arn:aws:mediastore:us-west-2:111222333444:container/ExampleLiveDemo/*\",    \"Condition\" : {      \"Bool\" : {        \"aws:SecureTransport\" : \"true\"      }    }  } ]}"

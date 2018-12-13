@@ -15,15 +15,13 @@ You can use the console to download an object\. You can use the AWS CLI to downl
 1. On the **Object** details page, choose **Download**\.
 
 **To download an object \(AWS CLI\)**
-+ In the AWS CLI, use the **get\-object** command\.
-
-  Example:
++ In the AWS CLI, use the `get-object` command:
 
   ```
   aws mediastore-data --region us-west-2 get-object --endpoint=https://aaabbbcccdddee.data.mediastore.us-west-2.amazonaws.com --path=/test/document/README3.md README3.md
   ```
 
-  Example return value:
+  The following example shows the return value:
 
   ```
   {
@@ -35,15 +33,13 @@ You can use the console to download an object\. You can use the AWS CLI to downl
   ```
 
 **To download part of an object \(AWS CLI\)**
-+ In the AWS CLI, use the **get\-object** command, and specify a range\.
-
-  Example:
++ In the AWS CLI, use the `get-object` command, and specify a range\.
 
   ```
   aws mediastore-data --region us-west-2 get-object --endpoint=https://aaabbbcccdddee.data.mediastore.us-west-2.amazonaws.com --path=/test/document/README3.md --range="bytes=0-100" README4.md
   ```
 
-  Example return value:
+  The following example shows the return value:
 
   ```
   {

@@ -34,9 +34,9 @@ Create two policies for AWS Elemental MediaStore: one to provide read/write acce
 
 1. Choose **Review policy**\.
 
-1. On the **Review policy** page, for **Name**, type **MediaStoreAllAccess** , and then choose **Create policy**\.
+1. On the **Review policy** page, for **Name**, type `MediaStoreAllAccess` , and then choose **Create policy**\.
 
-1. On the **Policies** page, repeat steps 1\-5 to create a read\-only policy\. Use the following policy and call it **MediaStoreReadOnlyAccess**:
+1. On the **Policies** page, repeat steps 1\-5 to create a read\-only policy\. Use the following policy and call it `MediaStoreReadOnlyAccess`:
 
    ```
    {
