@@ -1,4 +1,4 @@
-# Working with Objects in AWS Elemental MediaStore<a name="objects"></a>
+# Objects in AWS Elemental MediaStore<a name="objects"></a>
 
 AWS Elemental MediaStore assets are called *objects*\. You can upload an object to a container or to a folder within the container\.
 

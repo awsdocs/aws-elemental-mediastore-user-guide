@@ -1,4 +1,4 @@
-# Working with Container Policies in AWS Elemental MediaStore<a name="policies"></a>
+# Container Policies in AWS Elemental MediaStore<a name="policies"></a>
 
 Each container has a resource\-based policy that governs access rights to all folders and objects in that container\. The default policy, which is automatically attached to all new containers, allows access to all AWS Elemental MediaStore operations on the container\. It specifies that this access has the condition of requiring HTTPS for the operations\. After you create a container, you can edit the policy that is attached to that container\.
 

@@ -1,4 +1,4 @@
-# Working with Folders in AWS Elemental MediaStore<a name="folders"></a>
+# Folders in AWS Elemental MediaStore<a name="folders"></a>
 
 Folders are divisions within a container\. You use folders to subdivide your container in the same way that you create subfolders to divide a folder in a file system\. You can create up to 10 levels of folders \(not including the container itself\)\. 
 

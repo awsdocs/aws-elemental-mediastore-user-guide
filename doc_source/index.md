@@ -1,7 +1,7 @@
 # AWS Elemental MediaStore User Guide
 
 -----
-*****Copyright &copy; 2018 Amazon Web Services, Inc. and/or its affiliates. All rights reserved.*****
+*****Copyright &copy; 2019 Amazon Web Services, Inc. and/or its affiliates. All rights reserved.*****
 
 -----
 Amazon's trademarks and trade dress may not be used in 
@@ -28,13 +28,13 @@ Amazon's trademarks and trade dress may not be used in
       + [Step 2: Create User Groups](setting-up-IAM-users-create-nonadmin-user-groups.md)
       + [Step 3: Create Users](setting-up-IAM-users-create-nonadmin-users.md)
 + [Getting Started with AWS Elemental MediaStore](getting-started.md)
-+ [Working with Containers in AWS Elemental MediaStore](containers.md)
++ [Containers in AWS Elemental MediaStore](containers.md)
    + [Rules for Container Names](containers-rules-for-names.md)
    + [Creating a Container](containers-create.md)
    + [Viewing the Details for a Container](containers-view-details.md)
    + [Viewing a List of Containers](containers-view-list.md)
    + [Deleting a Container](containers-delete.md)
-+ [Working with Container Policies in AWS Elemental MediaStore](policies.md)
++ [Container Policies in AWS Elemental MediaStore](policies.md)
    + [Viewing a Container Policy](policies-view.md)
    + [Editing a Container Policy](policies-edit.md)
    + [Example Container Policies](policies-examples.md)
@@ -57,17 +57,17 @@ Amazon's trademarks and trade dress may not be used in
    + [Example CORS Policies](cors-policies-examples.md)
       + [Example CORS Policy: Read Access for Any Domain](cors-policies-examples-read-all-domains.md)
       + [Example CORS Policy: Read Access for a Specific Domain](cors-policies-examples-read-specific-domain.md)
-+ [Working with Object Lifecycle Policies in AWS Elemental MediaStore](policies-object-lifecycle.md)
++ [Object Lifecycle Policies in AWS Elemental MediaStore](policies-object-lifecycle.md)
    + [Components of an Object Lifecycle Policy](policies-object-lifecycle-components.md)
    + [Adding an Object Lifecycle Policy to a Container](policies-object-lifecycle-add.md)
    + [Viewing an Object Lifecycle Policy](policies-object-lifecycle-view.md)
    + [Changing an Object Lifecycle Policy](policies-object-lifecycle-change.md)
    + [Deleting an Object Lifecycle Policy](policies-object-lifecycle-delete.md)
-+ [Working with Folders in AWS Elemental MediaStore](folders.md)
++ [Folders in AWS Elemental MediaStore](folders.md)
    + [Rules for Folder Names](folders-rules-for-names.md)
    + [Creating a Folder](folders-create.md)
    + [Deleting a Folder](folders-delete.md)
-+ [Working with Objects in AWS Elemental MediaStore](objects.md)
++ [Objects in AWS Elemental MediaStore](objects.md)
    + [Uploading an Object](objects-upload.md)
    + [Viewing a List of Objects](objects-view-list.md)
    + [Viewing the Details of an Object](objects-view-details.md)
@@ -84,5 +84,6 @@ Amazon's trademarks and trade dress may not be used in
 + [Working with Content Delivery Networks (CDNs)](cdns.md)
    + [Allowing Amazon CloudFront to Access Your AWS Elemental MediaStore Container](cdns-allowing-cloudfront-to-access-mediastore.md)
 + [Limits in AWS Elemental MediaStore](limits.md)
++ [AWS Elemental MediaStore Related Information](resources.md)
 + [Document History for User Guide](doc-history.md)
 + [AWS Glossary](glossary.md)

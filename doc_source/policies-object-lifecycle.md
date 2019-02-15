@@ -1,4 +1,4 @@
-# Working with Object Lifecycle Policies in AWS Elemental MediaStore<a name="policies-object-lifecycle"></a>
+# Object Lifecycle Policies in AWS Elemental MediaStore<a name="policies-object-lifecycle"></a>
 
 For each container, you can create an object lifecycle policy that governs how long objects should be stored in the container\. When objects reach the maximum age that you specify, AWS Elemental MediaStore deletes the objects\. You can delete objects after they are no longer needed to save on storage costs\.
 
