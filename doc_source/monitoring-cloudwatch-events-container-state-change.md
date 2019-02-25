@@ -1,6 +1,6 @@
 # AWS Elemental MediaStore Container State Change Event<a name="monitoring-cloudwatch-events-container-state-change"></a>
 
-This event is published when a container’s state has changed \(when a container has been added or deleted\)\. For information on subscribing to this event, see [Amazon CloudWatch](https://docs.aws.amazon.com/cloudwatch/)\.
+This event is published when a container’s state has changed \(when a container has been added or deleted\)\. For information about subscribing to this event, see [Amazon CloudWatch](https://docs.aws.amazon.com/cloudwatch/)\.
 
 **Container Created**
 
@@ -14,7 +14,7 @@ This event is published when a container’s state has changed \(when a containe
   "time": "2017-02-22T18:43:48Z",
   "region": "us-east-1",
   "resources": [
-    "arn:aws:mediastore:us-east-1:123456789012:container/Movies"
+    "arn:aws:mediastore:us-east-1:111122223333:container/Movies"
   ],
   "detail": {
     "ContainerName": "Movies",
@@ -36,7 +36,7 @@ This event is published when a container’s state has changed \(when a containe
   "time": "2017-02-22T18:43:48Z",
   "region": "us-east-1",
   "resources": [
-    "arn:aws:mediastore:us-east-1:123456789012:container/Movies"
+    "arn:aws:mediastore:us-east-1:111122223333:container/Movies"
   ],
   "detail": {
     "ContainerName": "Movies",

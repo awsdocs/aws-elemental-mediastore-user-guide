@@ -1,6 +1,6 @@
 # AWS Elemental MediaStore Object State Change Event<a name="monitoring-cloudwatch-events-object-state-change"></a>
 
-This event is published when an object's state has changed \(when the object has been uploaded or deleted\)\. For information on subscribing to this event, see [Amazon CloudWatch](https://docs.aws.amazon.com/cloudwatch/)\.
+This event is published when an object's state has changed \(when the object has been uploaded or deleted\)\. For information about subscribing to this event, see [Amazon CloudWatch](https://docs.aws.amazon.com/cloudwatch/)\.
 
 **Object Updated**
 
@@ -14,13 +14,13 @@ This event is published when an object's state has changed \(when the object has
   "time": "2017-02-22T18:43:48Z",
   "region": "us-east-1",
   "resources": [
-    "arn:aws:mediastore:us-east-1:123456789012:MondayMornings/Episode1/Introduction.avi"
+    "arn:aws:mediastore:us-east-1:111122223333:MondayMornings/Episode1/Introduction.avi"
   ],
   "detail": {
     "ContainerName": "Movies",
     "Operation": "UPDATE",
     "Path":"TVShow/Episode1/Pilot.avi",
-    "ObjectSize":123567890830,
+    "ObjectSize":111122223333,
     "URL": "https://a832p1qeaznlp9.files.mediastore-us-west-2.com/Movies/MondayMornings/Episode1/Introduction.avi"
   }
 }
@@ -38,7 +38,7 @@ This event is published when an object's state has changed \(when the object has
   "time": "2017-02-22T18:43:48Z",
   "region": "us-east-1",
   "resources": [
-    "arn:aws:mediastore:us-east-1:123456789012:Movies/MondayMornings/Episode1/Introduction.avi"
+    "arn:aws:mediastore:us-east-1:111122223333:Movies/MondayMornings/Episode1/Introduction.avi"
   ],
   "detail": {
     "ContainerName": "Movies",

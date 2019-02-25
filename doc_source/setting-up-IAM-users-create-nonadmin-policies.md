@@ -4,7 +4,7 @@ Create two policies for AWS Elemental MediaStore: one to provide read/write acce
 
 **To create policies**
 
-1. Use your AWS account ID or account alias, and the credentials for your admin IAM user to sign in to the [IAM console](https://console.aws.amazon.com/iam)\.
+1. Use your AWS account ID or account alias, and the credentials for your admin IAM user, to sign in to the [IAM console](https://console.aws.amazon.com/iam)\.
 
 1. In the navigation pane of the console, choose **Policies**, and then choose **Create policy**\.
 
@@ -34,9 +34,9 @@ Create two policies for AWS Elemental MediaStore: one to provide read/write acce
 
 1. Choose **Review policy**\.
 
-1. On the **Review policy** page, for **Name**, type `MediaStoreAllAccess` , and then choose **Create policy**\.
+1. On the **Review policy** page, for **Name**, enter **MediaStoreAllAccess** , and then choose **Create policy**\.
 
-1. On the **Policies** page, repeat steps 1\-5 to create a read\-only policy\. Use the following policy and call it `MediaStoreReadOnlyAccess`:
+1. On the **Policies** page, repeat steps 1\-5 to create a read\-only policy\. Use the following policy and name it **MediaStoreReadOnlyAccess**:
 
    ```
    {
@@ -45,7 +45,6 @@ Create two policies for AWS Elemental MediaStore: one to provide read/write acce
            {
                "Action": [
                    "mediastore:Get*",
-   
                    "mediastore:List*",
                    "mediastore:Describe*"
                ],

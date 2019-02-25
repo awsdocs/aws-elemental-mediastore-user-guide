@@ -4,6 +4,7 @@ The following table describes the documentation for this release of AWS Elementa
 
 | Change | Description | Date | 
 | --- |--- |--- |
+| [Access logging](monitoring-cloudwatch-logs.md) | AWS Elemental MediaStore now supports access logging, which provides detailed records for the requests that are made to objects in a container\. | February 25, 2019 | 
 | [Object lifecycle policies](policies-object-lifecycle.md) | Added support for object lifecycle policies, which govern the expiration date of objects within the current container\. | December 12, 2018 | 
 | [Increased object size limit](limits.md) | The limit for an object's size is now 25 MB\. | October 10, 2018 | 
 | [Increased object size limit](limits.md) | The limit for an object's size is now 20 MB\. | September 6, 2018 | 
