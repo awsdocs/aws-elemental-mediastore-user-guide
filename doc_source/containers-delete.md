@@ -6,7 +6,7 @@ You can delete a container only if it has no objects\.
 
 1. Open the MediaStore console at [https://console\.aws\.amazon\.com/mediastore/](https://console.aws.amazon.com/mediastore/)\.
 
-1. On the **Containers** page, choose the radio button to the left of the container name\.
+1. On the **Containers** page, choose the option to the left of the container name\.
 
 1. Choose **Delete**\.
 

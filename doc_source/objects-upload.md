@@ -1,8 +1,12 @@
 # Uploading an Object<a name="objects-upload"></a>
 
-You can upload objects \(up to 25 MB each\) to a container or to a folder within a container\. To upload an object to a folder, you specify the path to the folder\. If the folder already exists, AWS Elemental MediaStore stores the object in the folder\. If the folder doesn’t exist, the service creates it, and then stores the object in the folder\. For more information about folders, see [Folders in AWS Elemental MediaStore](folders.md)\.
+You can upload objects to a container or to a folder within a container\. To upload an object to a folder, you specify the path to the folder\. If the folder already exists, AWS Elemental MediaStore stores the object in the folder\. If the folder doesn’t exist, the service creates it, and then stores the object in the folder\. For more information about folders, see [Folders in AWS Elemental MediaStore](folders.md)\.
 
 You can use the AWS Elemental MediaStore console or the AWS CLI to upload objects\. 
+
+AWS Elemental MediaStore supports chunked transfer of objects, which reduces latency by making an object available for downloading while it is still being uploaded\. To use this capability, set the object's upload availability to `streaming`\. You can set the value of this header when you [upload the object using the API](https://docs.aws.amazon.com/mediastore/latest/apireference/API_objstore_PutObject.html)\. If you don't specify this header in your request, AWS Elemental MediaStore assigns the default value of `standard` for the object’s upload availability\. 
+
+Object sizes are limited to 25 MB for standard upload availability and 10 MB for streaming upload availability\.
 
 **Note**  
 Object file names can contain only letters, numbers, periods \(\.\), underscores \(\_\), tildes \(\~\), and hyphens \(\-\)\. 
@@ -31,7 +35,7 @@ If a file with the same name already exists in the selected folder, the service 
 After you upload the object, you can’t edit the `content-type`, `cache-control`, or `path`\.
 
   ```
-  aws mediastore-data --region us-west-2 put-object --endpoint=https://aaabbbcccdddee.data.mediastore.us-west-2.amazonaws.com --body=README.md --path=/test/document/README3.md --cache-control "max-age=6, public" --content-type binary/octet-stream
+  aws mediastore-data put-object --region us-west-2 --endpoint=https://aaabbbcccdddee.data.mediastore.us-west-2.amazonaws.com --body=README.md --path=/test/document/README3.md --cache-control "max-age=6, public" --content-type binary/octet-stream
   ```
 
   The following example shows the return value:

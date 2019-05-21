@@ -29,7 +29,7 @@ You can use the console or the AWS CLI to view the resource\-based policy of a c
           "Effect": "Allow",
           "Principal": "*",
           "Action": "mediastore:*",
-          "Resource": "arn:aws:mediastore:us-west-2:111222333444:container/ExampleLiveDemo/*",
+          "Resource": "arn:aws:mediastore:us-west-2:111122223333:container/ExampleLiveDemo/*",
           "Condition": {
             "Bool": {
               "aws:SecureTransport": "true"

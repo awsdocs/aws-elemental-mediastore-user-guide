@@ -4,6 +4,9 @@ The following table describes the documentation for this release of AWS Elementa
 
 | Change | Description | Date | 
 | --- |--- |--- |
+| [AWS CloudFormation support](containers-create.md) | You can now use an AWS CloudFormation template to create a container automatically\. The AWS CloudFormation template manages data for five API actions: creating a container, setting access logging, updating the default container policy, adding a cross\-origin resource sharing \(CORS\) policy, and adding an object lifecycle policy\. | May 17, 2019 | 
+| [Limits for streaming upload availability](limits.md) | For objects with streaming upload availability \(chunked transfer of objects\), the `PutObject` operation is limited to 10 TPS and the `GetObject` operation is limited to 25 TPS\. | April 8, 2019 | 
+| [Chunked transfer of objects](objects-upload.md) | Added support for chunked transfer of objects\. This capability allows you to specify that an object is available for downloading before the object is uploaded completely\. | April 5, 2019 | 
 | [Access logging](monitoring-cloudwatch-logs.md) | AWS Elemental MediaStore now supports access logging, which provides detailed records for the requests that are made to objects in a container\. | February 25, 2019 | 
 | [Object lifecycle policies](policies-object-lifecycle.md) | Added support for object lifecycle policies, which govern the expiration date of objects within the current container\. | December 12, 2018 | 
 | [Increased object size limit](limits.md) | The limit for an object's size is now 25 MB\. | October 10, 2018 | 

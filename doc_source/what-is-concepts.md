@@ -13,7 +13,7 @@ Container
 A namespace that holds objects\. A container has an endpoint that you can use for writing and retrieving objects and attaching access policies\.
 
 Endpoint  
-An entry point to the AWS Elemental MediaStore service, given as an HTTP\(S\) root URL\.
+An entry point to the AWS Elemental MediaStore service, given as an HTTP/S root URL\.
 
 ETag  
 An [entity tag](https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.19), which is a hash of the object data\.
@@ -39,20 +39,6 @@ A subset of data \(chunk\) of an object\.
 Policy  
 An [IAM policy](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html)\.
 
-**AWS Elemental MediaStore verbs**Create  
-Creates an object, often implemented with HTTP POST\.
-
-Delete  
-Deletes an object, often implemented with HTTP DELETE\.
-
-Describe  
-Returns metadata about an object, often implemented with HTTP HEAD\.
-
-Get  
-Retrieves an object\.
-
-List  
-Retrieves a list of items, which can be objects**or folders*\.*
-
-Put  
-Updates an object, often implemented with HTTP PUT\.
+Resource  
+An entity in AWS that you can work with\. Each AWS resource is assigned an Amazon Resource Name \(ARN\) that acts as a unique identifier\. In AWS Elemental MediaStore, this is the resource and its ARN format:   
++ Container: `aws:mediastore:region:account-id:container/:containerName`
