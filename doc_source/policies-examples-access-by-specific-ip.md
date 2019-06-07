@@ -1,4 +1,4 @@
-# Example Container Policy: Access Restricted to Specific IP Addresses<a name="policies-examples-access-by-specific-ip"></a>
+# Example Container Policy: Access Restricted by IP Address<a name="policies-examples-access-by-specific-ip"></a>
 
 This example policy allows access to all AWS Elemental MediaStore operations on objects in the specified container\. However, the request must originate from the range of IP addresses specified in the condition\.
 

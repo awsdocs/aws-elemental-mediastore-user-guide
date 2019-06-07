@@ -1,6 +1,6 @@
 # Step 3: Create Users<a name="setting-up-IAM-users-create-nonadmin-users"></a>
 
-Create IAM users for the individuals who require access to AWS Elemental MediaStore, and add each user to the appropriate user group to ensure that they have the right level of permissions\. If you have already created users, skip to step 6 to modify the permissions for the users\.
+Create IAM users for the individuals who require access to AWS Elemental MediaStore, and add each user to the appropriate user group to ensure that they have the right level of permissions\. If you already created users, skip to step 6 to modify the permissions for the users\.
 
 **To create users**
 

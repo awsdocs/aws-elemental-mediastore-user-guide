@@ -4,7 +4,7 @@ This section explains how to add a cross\-origin resource sharing \(CORS\) confi
 
 To configure your container to allow cross\-origin requests, you add a CORS policy to the container\. A CORS policy defines rules that identify the origins that you allow to access your container, the operations \(HTTP methods\) supported for each origin, and other operation\-specific information\.
 
-When you add a CORS policy to the container, the [container policies](policies.md) \(that govern access rights to the container\) continue to apply\.
+When you add a CORS policy to the container, the [container policies](policies.md) \(which govern access rights to the container\) continue to apply\.
 
 **To add a CORS policy \(console\)**
 

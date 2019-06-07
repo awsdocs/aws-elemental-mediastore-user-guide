@@ -1,6 +1,6 @@
 # Viewing a CORS Policy<a name="cors-policy-viewing"></a>
 
-Cross\-origin resource sharing \(CORS\) defines a way for client web applications that are loaded in one domain to interact with resources in a different domain\.
+Cross\-origin resource sharing \(CORS\) defines a way for client web applications that are loaded in one domain to interact with resources in a different domain\. You can use the console or the AWS CLI to view a CORS policy on a container\.
 
 **To view a CORS policy \(console\)**
 

@@ -1,6 +1,6 @@
 # Editing a CORS Policy<a name="cors-policy-editing"></a>
 
-Cross\-origin resource sharing \(CORS\) defines a way for client web applications that are loaded in one domain to interact with resources in a different domain\.
+Cross\-origin resource sharing \(CORS\) defines a way for client web applications that are loaded in one domain to interact with resources in a different domain\. You can use the console to edit a CORS policy on a container\.
 
 **To edit a CORS policy \(console\)**
 
