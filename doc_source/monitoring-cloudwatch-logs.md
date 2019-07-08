@@ -1,8 +1,8 @@
 # CloudWatch Logs<a name="monitoring-cloudwatch-logs"></a>
 
-Access logging provides detailed records for the requests that are made to objects in a container\. Access logs are useful for many applications, such as security and access audits\. They can also help you learn about your customer base and understand your AWS Elemental MediaStore bill\. CloudWatch Logs are categorized as follows:
+Access logging provides detailed records for the requests that are made to objects in a container\. Access logs are useful for many applications, such as security and access audits\. They can also help you learn about your customer base and understand your MediaStore bill\. CloudWatch Logs are categorized as follows:
 + A log stream is a sequence of log events that share the same source\.
-+ A log group is a group of log streams that share the same retention, monitoring, and access control settings\. When you enable access logging on a container, AWS Elemental MediaStore creates a log group with a name such as `/aws/mediastore/MyContainerName`\. You can define log groups and specify which streams to put into each group\. There is no limit on the number of log streams that can belong to one log group\.
++ A log group is a group of log streams that share the same retention, monitoring, and access control settings\. When you enable access logging on a container, MediaStore creates a log group with a name such as `/aws/mediastore/MyContainerName`\. You can define log groups and specify which streams to put into each group\. There is no limit on the number of log streams that can belong to one log group\.
 
 By default, logs are kept indefinitely and never expire\. You can adjust the retention policy for each log group, keeping the indefinite retention, or choosing a retention period from one day to 10 years\.
 

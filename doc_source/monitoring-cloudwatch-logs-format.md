@@ -68,12 +68,12 @@ Operation
 The operation that was performed, such as `PutObject` or `ListItems`\.
 
 ErrorCode  
-The AWS Elemental MediaStore error code \(such as `InternalServerError`\)\. If no error occurred, the `-` character appears\. An error code might appear even if the status code is 200 \(indicating a closed connection or an error after the server started streaming the response\)\.
+The MediaStore error code \(such as `InternalServerError`\)\. If no error occurred, the `-` character appears\. An error code might appear even if the status code is 200 \(indicating a closed connection or an error after the server started streaming the response\)\.
 
 HTTPStatus  
 The numeric HTTP status code of the response\.
 
 TurnAroundTime  
-The number of milliseconds that AWS Elemental MediaStore spent processing your request\. This value is measured from the time the last byte of your request was received until the time the first byte of the response was sent\.
+The number of milliseconds that MediaStore spent processing your request\. This value is measured from the time the last byte of your request was received until the time the first byte of the response was sent\.
 
 The order of the fields in the log can vary\.

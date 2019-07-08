@@ -35,7 +35,7 @@ Use AWS Identity and Access Management \(IAM\) to create a role that gives AWS E
    }
    ```
 
-   This policy allows AWS Elemental MediaStore to create log groups and log streams for any containers in any Region within your AWS account\.
+   This policy allows MediaStore to create log groups and log streams for any containers in any Region within your AWS account\.
 
 1. Choose **Review policy**\.
 
