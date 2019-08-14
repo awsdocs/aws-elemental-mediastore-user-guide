@@ -2,8 +2,6 @@
 
 If you encounter unexpected behavior when you access a container that has a CORS policy, follow these steps to troubleshoot the issue\.
 
-**To troubleshoot CORS issues**
-
 1. Verify that the CORS policy is attached to the container\.
 
    For instructions, see [Viewing a CORS Policy](cors-policy-viewing.md)\.
@@ -12,7 +10,7 @@ If you encounter unexpected behavior when you access a container that has a CORS
 
    1. Verify that the request has an `Origin` header\.
 
-      If the header is missing, AWS Elemental MediaStore doesn't treat the request as a cross\-origin request and doesn't send CORS response headers back in the response\.
+      If the header is missing, AWS Elemental MediaStore does not treat the request as a cross\-origin request and does not send CORS response headers back in the response\.
 
    1. Verify that the `Origin` header in your request matches at least one of the `AllowedOrigins` elements in the specific `CORSRule`\.
 

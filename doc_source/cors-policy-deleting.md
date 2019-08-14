@@ -18,7 +18,7 @@ Cross\-origin resource sharing \(CORS\) defines a way for client web application
 + In the AWS CLI, use the `delete-cors-policy` command:
 
   ```
-  aws mediastore delete-cors-policy --container-name ExampleContainer --region ap-southeast-2 --endpoint https://mediastore.ap-southeast-2.amazonaws.com/
+  aws mediastore delete-cors-policy --container-name ExampleContainer --region us-west-2
   ```
 
   This command has no return value\.

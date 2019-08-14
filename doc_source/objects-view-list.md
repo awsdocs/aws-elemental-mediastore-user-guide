@@ -24,7 +24,7 @@ You can use the AWS Elemental MediaStore console to view items \(objects and fol
 + In the AWS CLI, use the `list-items` command:
 
   ```
-  aws mediastore-data --region us-west-2 list-items --endpoint=https://aaabbbcccdddee.data.mediastore.us-west-2.amazonaws.com
+  aws mediastore-data list-items --endpoint https://aaabbbcccdddee.data.mediastore.us-west-2.amazonaws.com --region us-west-2
   ```
 
   The following example shows the return value:
@@ -33,12 +33,16 @@ You can use the AWS Elemental MediaStore console to view items \(objects and fol
   {
       "Items": [
           {
-              "Type": "FOLDER",
-              "Name": "ExampleLiveDemo"
+              "ContentType": "image/jpeg",
+              "LastModified": 1563571859.379,
+              "Name": "filename.jpg",
+              "Type": "OBJECT",
+              "ETag": "543ab21abcd1a234ab123456a1a2b12345ab12abc12a1234abc1a2bc12345a12",
+              "ContentLength": 3784
           },
           {
               "Type": "FOLDER",
-              "Name": "folder_1"
+              "Name": "ExampleLiveDemo"
           }
       ]
   }
@@ -48,7 +52,7 @@ You can use the AWS Elemental MediaStore console to view items \(objects and fol
 + In the AWS CLI, use the `list-items` command, with the specified folder name at the end of the request:
 
   ```
-  aws mediastore-data --region us-west-2 list-items --endpoint=https://aaabbbcccdddee.data.mediastore.us-west-2.amazonaws.com --path=/folder_1
+  aws mediastore-data list-items --endpoint https://aaabbbcccdddee.data.mediastore.us-west-2.amazonaws.com --path /folder_name --region us-west-2
   ```
 
   The following example shows the return value:
@@ -57,12 +61,16 @@ You can use the AWS Elemental MediaStore console to view items \(objects and fol
   {
       "Items": [
           {
-              "Type": "OBJECT",
-              "Name": "1512519711640.ts"
+              "Type": "FOLDER",
+              "Name": "folder_1"
           },
           {
-              "Type": "OBJECT",
-              "Name": "test_file.pdf"
+              "LastModified": 1563571940.861,
+              "ContentLength": 2307346,
+              "Name": "file1234.jpg",
+              "ETag": "111a1a22222a1a1a222abc333a444444b55ab1111ab2222222222ab333333a2b",
+              "ContentType": "image/jpeg",
+              "Type": "OBJECT"
           }
       ]
   }

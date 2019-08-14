@@ -1,6 +1,6 @@
 # Editing a CORS Policy<a name="cors-policy-editing"></a>
 
-Cross\-origin resource sharing \(CORS\) defines a way for client web applications that are loaded in one domain to interact with resources in a different domain\. You can use the console to edit a CORS policy on a container\.
+Cross\-origin resource sharing \(CORS\) defines a way for client web applications that are loaded in one domain to interact with resources in a different domain\.
 
 **To edit a CORS policy \(console\)**
 
@@ -13,3 +13,33 @@ Cross\-origin resource sharing \(CORS\) defines a way for client web application
 1. In the **Container CORS policy** section, choose **Edit CORS policy**\.
 
 1. Make your changes to the policy, and then choose **Save**\.
+
+**To edit a CORS policy \(AWS CLI\)**
+
+1. Create a file that defines the updated CORS policy:
+
+   ```
+   [
+     {
+       "AllowedHeaders": [
+         "*"
+       ],
+       "AllowedMethods": [
+         "GET",
+         "HEAD"
+       ],
+       "AllowedOrigins": [
+         "https://www.example.com"
+       ],
+       "MaxAgeSeconds": 3000
+     }
+   ]
+   ```
+
+1. In the AWS CLI, use the `put-cors-policy` command\.
+
+   ```
+   aws mediastore put-cors-policy --container-name ExampleContainer --cors-policy file://corsPolicy2.json
+   ```
+
+   This command has no return value\.

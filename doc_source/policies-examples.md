@@ -12,4 +12,4 @@ The following examples show container policies that are constructed for differen
 + [Example Container Policy: Cross\-Account Full Access to a Role](policies-examples-cross-acccount-full.md)
 + [Example Container Policy: Post Access to an AWS Service to a Folder](policies-examples-post-access-folder.md)
 + [Example Container Policy: Post Access to an AWS Service to Multiple Folders](policies-examples-post-access-multiple-folders.md)
-+ [Example Container Policy: Access Restricted by IP Address](policies-examples-access-by-specific-ip.md)
++ [Example Container Policy: Access Restricted to Specific IP Addresses](policies-examples-access-by-specific-ip.md)

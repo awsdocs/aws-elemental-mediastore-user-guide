@@ -4,7 +4,7 @@ This section explains how to add a cross\-origin resource sharing \(CORS\) confi
 
 To configure your container to allow cross\-origin requests, you add a CORS policy to the container\. A CORS policy defines rules that identify the origins that you allow to access your container, the operations \(HTTP methods\) supported for each origin, and other operation\-specific information\.
 
-When you add a CORS policy to the container, the [container policies](policies.md) \(which govern access rights to the container\) continue to apply\.
+When you add a CORS policy to the container, the [container policies](policies.md) \(that govern access rights to the container\) continue to apply\.
 
 **To add a CORS policy \(console\)**
 
@@ -19,10 +19,31 @@ When you add a CORS policy to the container, the [container policies](policies.m
 1. Insert the policy in JSON format, and then choose **Save**\.
 
 **To add a CORS policy \(AWS CLI\)**
-+ In the AWS CLI, use the `put-cors-policy` command\.
 
-  ```
-  aws mediastore put-cors-policy --container-name ExampleContainer --cors-policy '[{"AllowedOrigins": ["*"],"AllowedMethods": ["GET"],"AllowedHeaders": ["*"],"ExposeHeaders": ["*"], "MaxAgeSeconds":3000}]' --region ap-southeast-2 --endpoint https://mediastore.ap-southeast-2.amazonaws.com/
-  ```
+1. Create a file that defines the CORS policy:
 
-  This command has no return value\.
+   ```
+   [
+     {
+       "AllowedHeaders": [
+         "*"
+       ],
+       "AllowedMethods": [
+         "GET",
+         "HEAD"
+       ],
+       "AllowedOrigins": [
+         "*"
+       ],
+       "MaxAgeSeconds": 3000
+     }
+   ]
+   ```
+
+1. In the AWS CLI, use the `put-cors-policy` command\.
+
+   ```
+   aws mediastore put-cors-policy --container-name ExampleContainer --cors-policy file://corsPolicy.json
+   ```
+
+   This command has no return value\.

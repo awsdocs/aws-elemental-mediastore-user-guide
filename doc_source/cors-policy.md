@@ -3,7 +3,7 @@
 Cross\-origin resource sharing \(CORS\) defines a way for client web applications that are loaded in one domain to interact with resources in a different domain\. With CORS support in AWS Elemental MediaStore, you can build rich client\-side web applications with MediaStore and selectively allow cross\-origin access to your MediaStore resources\.
 
 **Note**  
-If you use Amazon CloudFront to distribute content from a container that has a CORS policy, be sure to [configure the distribution for AWS Elemental MediaStore](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/live-streaming.html#video-streaming-mediastore) \(including the step to edit the cache behavior to set up CORS\)\.
+If you are using Amazon CloudFront to distribute content from a container that has a CORS policy, be sure to [configure the distribution for AWS Elemental MediaStore](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/live-streaming.html#video-streaming-mediastore) \(including the step to edit the cache behavior to set up CORS\)\.
 
 This section provides an overview of CORS\. The subtopics describe how you can enable CORS using the AWS Elemental MediaStore console, or programmatically using the MediaStore REST API and the AWS SDKs\.
 

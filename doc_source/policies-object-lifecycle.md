@@ -4,6 +4,9 @@ For each container, you can create an object lifecycle policy that governs how l
 
 An object lifecycle policy contains rules, which dictate the lifespan of objects by subfolder\. \(You can't assign an object lifecycle policy to individual objects\)\. You can attach only one object lifecycle policy to a container, but you can add up to 10 rules to each object lifecycle policy\. For more information, see [Components of an Object Lifecycle Policy](policies-object-lifecycle-components.md)\.
 
+**Note**  
+There might be a slight lag between the expiration of an object and the deletion of the object\. However, changes in billing happen as soon as the object expires\. For example, if a lifecycle rule specifies 10 `days_since_create`, the account isn't billed for the object after the object is 10 days old, even if the object isn't deleted yet\.
+
 **Topics**
 + [Components of an Object Lifecycle Policy](policies-object-lifecycle-components.md)
 + [Adding an Object Lifecycle Policy to a Container](policies-object-lifecycle-add.md)

@@ -14,7 +14,7 @@ You can use the console or the AWS CLI to view the resource\-based policy of a c
 + In the AWS CLI, use the `get-container-policy` command:
 
   ```
-  aws mediastore get-container-policy --container-name=ExampleLiveDemo –-region us-west-2
+  aws mediastore get-container-policy --container-name ExampleLiveDemo --region us-west-2
   ```
 
   The following example shows the return value:
@@ -25,10 +25,15 @@ You can use the console or the AWS CLI to view the resource\-based policy of a c
       "Version": "2012-10-17",
       "Statement": [
         {
-          "Sid": "MediaStoreFullAccess",
+          "Sid": "PublicReadOverHttps",
           "Effect": "Allow",
-          "Principal": "*",
-          "Action": "mediastore:*",
+          "Principal": {
+            "AWS": "arn:aws:iam::111122223333:root",
+          },
+          "Action": [
+            "mediastore:GetObject",
+            "mediastore:DescribeObject",
+          ],
           "Resource": "arn:aws:mediastore:us-west-2:111122223333:container/ExampleLiveDemo/*",
           "Condition": {
             "Bool": {

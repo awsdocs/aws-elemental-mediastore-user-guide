@@ -18,16 +18,17 @@ You can use the console to download an object\. You can use the AWS CLI to downl
 + In the AWS CLI, use the `get-object` command:
 
   ```
-  aws mediastore-data --region us-west-2 get-object --endpoint=https://aaabbbcccdddee.data.mediastore.us-west-2.amazonaws.com --path=/test/document/README3.md README3.md
+  aws mediastore-data get-object --endpoint https://aaabbbcccdddee.data.mediastore.us-west-2.amazonaws.com --path=/folder_name/README.md README.md --region us-west-2
   ```
 
   The following example shows the return value:
 
   ```
   {
-      "ContentType": "binary/octet-stream",
-      "ContentLength": "2774",
-      "CacheControl": "pre-commit",
+      "ContentLength": "2307346",
+      "ContentType": "image/jpeg",
+      "LastModified": "Fri, 19 Jul 2019 21:32:20 GMT",
+      "ETag": "2aa333bbcc8d8d22d777e999c88d4aa9eeeeee4dd89ff7f555555555555da6d3",
       "StatusCode": 200
   }
   ```
@@ -36,17 +37,18 @@ You can use the console to download an object\. You can use the AWS CLI to downl
 + In the AWS CLI, use the `get-object` command, and specify a range\.
 
   ```
-  aws mediastore-data --region us-west-2 get-object --endpoint=https://aaabbbcccdddee.data.mediastore.us-west-2.amazonaws.com --path=/test/document/README3.md --range="bytes=0-100" README4.md
+  aws mediastore-data get-object --endpoint https://aaabbbcccdddee.data.mediastore.us-west-2.amazonaws.com --path /folder_name/README.md --range="bytes=0-100" README2.md --region us-west-2
   ```
 
   The following example shows the return value:
 
   ```
   {
-      "ContentType": "binary/octet-stream",
-      "ContentRange": "bytes 0-100/2774",
-      "CacheControl": "pre-commit",
+      "StatusCode": 206,
+      "ContentRange": "bytes 0-100/2307346",
       "ContentLength": "101",
-      "StatusCode": 206
+      "LastModified": "Fri, 19 Jul 2019 21:32:20 GMT",
+      "ContentType": "image/jpeg",
+      "ETag": "2aa333bbcc8d8d22d777e999c88d4aa9eeeeee4dd89ff7f555555555555da6d3"
   }
   ```

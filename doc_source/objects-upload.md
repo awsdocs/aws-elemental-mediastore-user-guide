@@ -35,7 +35,7 @@ If a file with the same name already exists in the selected folder, the service 
 After you upload the object, you can’t edit the `content-type`, `cache-control`, or `path`\.
 
   ```
-  aws mediastore-data put-object --region us-west-2 --endpoint=https://aaabbbcccdddee.data.mediastore.us-west-2.amazonaws.com --body=README.md --path=/test/document/README3.md --cache-control "max-age=6, public" --content-type binary/octet-stream
+  aws mediastore-data put-object --endpoint https://aaabbbcccdddee.data.mediastore.us-west-2.amazonaws.com --body README.md --path /folder_name/README.md --cache-control "max-age=6, public" --content-type binary/octet-stream --region us-west-2
   ```
 
   The following example shows the return value:

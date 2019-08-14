@@ -1,6 +1,6 @@
 # Viewing a CORS Policy<a name="cors-policy-viewing"></a>
 
-Cross\-origin resource sharing \(CORS\) defines a way for client web applications that are loaded in one domain to interact with resources in a different domain\. You can use the console or the AWS CLI to view a CORS policy on a container\.
+Cross\-origin resource sharing \(CORS\) defines a way for client web applications that are loaded in one domain to interact with resources in a different domain\.
 
 **To view a CORS policy \(console\)**
 
@@ -14,24 +14,27 @@ Cross\-origin resource sharing \(CORS\) defines a way for client web application
 + In the AWS CLI, use the `get-cors-policy` command:
 
   ```
-  aws mediastore get-cors-policy --container-name ExampleContainer --region ap-southeast-2 --endpoint https://mediastore.ap-southeast-2.amazonaws.com/
+  aws mediastore get-cors-policy --container-name ExampleContainer --region us-west-2
   ```
 
   The following example shows the return value:
 
   ```
-  [
-   {
-    "AllowedOrigins": ["http://example.com"],
-    "AllowedMethods": ["GET"],
-    "AllowedHeaders": ["*"],
-    "MaxAgeSeconds": 3000
-   },
-   {
-    "AllowedOrigins": ["https://*"],
-    "AllowedMethods": ["GET", "PUT"],
-    "AllowedHeaders": ["x-amzn*"],
-    "MaxAgeSeconds": 0
-   }
-  ]
+  {
+      "CorsPolicy": [
+          {
+              "AllowedMethods": [
+                  "GET",
+                  "HEAD"
+              ],
+              "MaxAgeSeconds": 3000,
+              "AllowedOrigins": [
+                  "*"
+              ],
+              "AllowedHeaders": [
+                  "*"
+              ]
+          }
+      ]
+  }
   ```

@@ -14,7 +14,7 @@ You can delete a container only if it has no objects\.
 + In the AWS CLI, use the `delete-container` command:
 
   ```
-  aws mediastore --region us-west-2 delete-container -–container-name=ExampleLiveDemo
+  aws mediastore delete-container --container-name=ExampleLiveDemo --region us-west-2
   ```
 
   This command has no return value\.

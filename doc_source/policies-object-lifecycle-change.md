@@ -1,6 +1,6 @@
 # Changing an Object Lifecycle Policy<a name="policies-object-lifecycle-change"></a>
 
-You can't edit an existing object lifecycle policy\. However, you can change an existing policy by uploading a replacement policy\. It takes up to 20 minutes for the updated policy to take effect\. 
+You can't edit an existing object lifecycle policy\. However, you can change an existing policy by uploading a replacement policy\. It takes up to 20 minutes for the service to apply the updated policy to the container\. 
 
 **To change an object lifecycle policy \(AWS CLI\)**
 

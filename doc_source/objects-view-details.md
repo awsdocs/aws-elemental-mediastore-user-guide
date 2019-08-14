@@ -18,16 +18,16 @@ After you upload an object, AWS Elemental MediaStore stores details such as the 
 + In the AWS CLI, use the `describe-object` command:
 
   ```
-  aws mediastore-data --region us-west-2 describe-object --endpoint=https://aaabbbcccdddee.data.mediastore.us-west-2.amazonaws.com --path=/test/document/README3.md
+  aws mediastore-data describe-object --endpoint https://aaabbbcccdddee.data.mediastore.us-west-2.amazonaws.com --path /folder_name/file1234.jpg --region us-west-2
   ```
 
   The following example shows the return value:
 
   ```
   {
-      "LastModified": "Mon, 20 Nov 2017 19:30:18 GMT"
-      "ContentLength": "2774",
-      "ETag": "2aa333bbcc8d8d22d777e999c88d4aa9eeeeee4dd89ff7f555555555555da6d3",
-      "ContentType": "binary/octet-stream",
+      "ContentType": "image/jpeg",
+      "LastModified": "Fri, 19 Jul 2019 21:32:20 GMT",
+      "ContentLength": "2307346",
+      "ETag": "2aa333bbcc8d8d22d777e999c88d4aa9eeeeee4dd89ff7f555555555555da6d3"
   }
   ```

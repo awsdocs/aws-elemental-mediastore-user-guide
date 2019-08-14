@@ -11,29 +11,29 @@ You can view a list of all the containers that are associated with your account\
 + In the AWS CLI, use the `list-containers` command\.
 
   ```
-  aws mediastore –-region us-west-2 list-containers
+  aws mediastore list-containers --region us-west-2
   ```
 
   The following example shows the return value:
 
   ```
   {
-      "Inputs": [
-         {
       "Containers": [
           {
-              "Status": "ACTIVE",
-              "Endpoint": "https://aaabbbcccdddee.data.mediastore.us-west-2.amazonaws.com",
               "CreationTime": 1505317931.0,
-              "Name": "ExampleLiveDemo",
-              "ARN": "arn:aws:mediastore:us-west-2:111222333444:container/ExampleLiveDemo"
+              "Endpoint": "https://aaabbbcccdddee.data.mediastore.us-west-2.amazonaws.com",
+              "Status": "ACTIVE",
+              "ARN": "arn:aws:mediastore:us-west-2:111122223333:container/ExampleLiveDemo",
+              "AccessLoggingEnabled": false,
+              "Name": "ExampleLiveDemo"
           },
           {
-              "Status": "ACTIVE",
-              "Endpoint": "https://fffggghhhiiijj.data.mediastore.us-west-2.amazonaws.com",
               "CreationTime": 1506528818.0,
-              "Name": "ExampleContainer",
-              "ARN": "arn:aws:mediastore:us-west-2:111222333444:container/ExampleContainer"
+              "Endpoint": "https://fffggghhhiiijj.data.mediastore.us-west-2.amazonaws.com",
+              "Status": "ACTIVE",
+              "ARN": "arn:aws:mediastore:us-west-2:111122223333:container/ExampleContainer",
+              "AccessLoggingEnabled": false,
+              "Name": "ExampleContainer"
           }
       ]
   }

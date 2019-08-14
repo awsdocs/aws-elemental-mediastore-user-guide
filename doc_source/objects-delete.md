@@ -23,7 +23,7 @@ When you delete the only object in a folder, AWS Elemental MediaStore automatica
   Example:
 
   ```
-  aws mediastore-data --region us-west-2 delete-object --endpoint=https://aaabbbcccdddee.data.mediastore.us-west-2.amazonaws.com --path=/test/document/README3.md
+  aws mediastore-data --region us-west-2 delete-object --endpoint=https://aaabbbcccdddee.data.mediastore.us-west-2.amazonaws.com --path=/folder_name/README.md
   ```
 
   This command has no return value\.

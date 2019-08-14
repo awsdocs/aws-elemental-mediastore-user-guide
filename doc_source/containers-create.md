@@ -19,7 +19,7 @@ You can also create a container automatically by using an AWS CloudFormation tem
 + In the AWS CLI, use the `create-container` command:
 
   ```
-  aws mediastore --region us-west-2 create-container -–container-name=ExampleContainer
+  aws mediastore create-container --container-name ExampleContainer --region us-west-2
   ```
 
   The following example shows the return value:
@@ -27,10 +27,11 @@ You can also create a container automatically by using an AWS CloudFormation tem
   ```
   {
       "Container": {
-          "Status": "CREATING",
-          "CreationTime": 1506528818.0,
+          "AccessLoggingEnabled": false,
+          "CreationTime": 1563557265.0,
           "Name": "ExampleContainer",
-          "ARN": "arn:aws:mediastore:us-west-2:111222333444:container/ExampleContainer"
+          "Status": "CREATING",
+          "ARN": "arn:aws:mediastore:us-west-2:111122223333:container/ExampleContainer"
       }
   }
   ```

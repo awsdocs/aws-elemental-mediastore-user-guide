@@ -13,11 +13,33 @@ You can edit the permissions in the default container policy, or you can create 
 1. Make the appropriate changes, and then choose **Save**\.
 
 **To edit a container policy \(AWS CLI\)**
-+ In the AWS CLI, use the `put-container-policy` command:
 
-  ```
-  aws mediastore put-container-policy –-region us-west-2 –-container-name ExampleLiveDemo –-policy-name=default –-policy={\"Version\" : \"2012-10-17\",  \"Statement\" : [ {    \"Sid\" : \"MediaStoreFullAccess\",    \"Effect\" : \"Allow\",    \"Principal\" : \"*\",    \"Action\" : \"mediastore:*\",    \"Resource\" : \"arn:aws:mediastore:us-west-2:111222333444:container/ExampleLiveDemo/*\",    \"Condition\" : {      \"Bool\" : {        \"aws:SecureTransport\" : \"true\"      }    }  } ]}"
-  }
-  ```
+1. Create a file that defines the container policy:
 
-  This command has no return value\.
+   ```
+   {
+     "Version": "2012-10-17",
+     "Statement": [
+       {
+         "Sid": "PublicReadOverHttps",
+         "Effect": "Allow",
+         "Action": ["mediastore:GetObject", "mediastore:DescribeObject"],
+         "Principal": "*",
+         "Resource": "arn:aws:mediastore:us-west-2:111122223333:container/ExampleLiveDemo/*",
+         "Condition": {
+           "Bool": {
+               "aws:SecureTransport": "true"
+           }
+         }
+       }
+     ]
+   }
+   ```
+
+1. In the AWS CLI, use the `put-container-policy` command:
+
+   ```
+   aws mediastore put-container-policy --container-name ExampleLiveDemo --policy file://ExampleContainerPolicy.json --region us-west-2
+   ```
+
+   This command has no return value\.

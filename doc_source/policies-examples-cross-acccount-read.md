@@ -1,6 +1,6 @@
 # Example Container Policy: Cross\-Account Read Access to a Role<a name="policies-examples-cross-acccount-read"></a>
 
-The example policy allows access to the `GetObject` and `DescribeObject` operations on any object \(as specified by the \* at the end of the resource path\) that is owned by the `<owner acct number>`\. It allows this access to any user of the `<other acct number>` if that account has assumed the role that is specified in `<role name>`:
+The example policy allows access to the `GetObject` and `DescribeObject` operations on any object \(as specified by the \* at the end of the resource path\) that is owned by the <owner acct number>\. It allows this access to any user of the <other acct number> if that account has assumed the role that is specified in <role name>:
 
 ```
 {
