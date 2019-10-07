@@ -8,5 +8,5 @@ An object lifecycle policy contains rules, which dictate the lifespan of objects
 + [Components of an Object Lifecycle Policy](policies-object-lifecycle-components.md)
 + [Adding an Object Lifecycle Policy to a Container](policies-object-lifecycle-add.md)
 + [Viewing an Object Lifecycle Policy](policies-object-lifecycle-view.md)
-+ [Changing an Object Lifecycle Policy](policies-object-lifecycle-change.md)
++ [Editing an Object Lifecycle Policy](policies-object-lifecycle-change.md)
 + [Deleting an Object Lifecycle Policy](policies-object-lifecycle-delete.md)

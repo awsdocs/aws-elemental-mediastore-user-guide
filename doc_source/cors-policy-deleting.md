@@ -10,9 +10,9 @@ Cross\-origin resource sharing \(CORS\) defines a way for client web application
 
    The container details page appears\. 
 
-1. In the **Container CORS policy** section, choose **Edit CORS policy**\.
+1. In the **Container CORS policy** section, choose **Delete CORS policy**\.
 
-1. Clear the text from the text box, and then choose **Save**\.
+1. Choose **Continue** to confirm, and then choose **Save**\.
 
 **To delete a CORS policy \(AWS CLI\)**
 + In the AWS CLI, use the `delete-cors-policy` command:

@@ -1,6 +1,6 @@
 # Document History for User Guide<a name="doc-history"></a>
 
-The following table describes the documentation for this release of AWS Elemental MediaStore\. For notification about updates to this documentation you can subscribe to an RSS feed\.
+The following table describes the documentation for this release of AWS Elemental MediaStore\. For notification about updates to this documentation, you can subscribe to an RSS feed\.
 
 | Change | Description | Date | 
 | --- |--- |--- |

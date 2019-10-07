@@ -1,8 +1,20 @@
-# Changing an Object Lifecycle Policy<a name="policies-object-lifecycle-change"></a>
+# Editing an Object Lifecycle Policy<a name="policies-object-lifecycle-change"></a>
 
 You can't edit an existing object lifecycle policy\. However, you can change an existing policy by uploading a replacement policy\. It takes up to 20 minutes for the service to apply the updated policy to the container\. 
 
-**To change an object lifecycle policy \(AWS CLI\)**
+**To edit an object lifecycle policy \(console\)**
+
+1. Open the MediaStore console at [https://console\.aws\.amazon\.com/mediastore/](https://console.aws.amazon.com/mediastore/)\.
+
+1. On the **Containers** page, choose the name of the container that you want to edit the object lifecycle policy for\.
+
+   The container details page appears\. 
+
+1. In the **Object lifecycle policy** section, choose **Edit object lifecycle policy**\.
+
+1. Make your changes to the policy, and then choose **Save**\.
+
+**To edit an object lifecycle policy \(AWS CLI\)**
 
 1. Create a file that defines the updated object lifecycle policy:
 
