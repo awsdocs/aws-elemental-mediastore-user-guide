@@ -6,11 +6,11 @@ Monitoring is an important part of maintaining the reliability, availability, an
 
 ## Amazon CloudWatch Alarms<a name="incident-response-cloudwatch-alarms"></a>
 
-Using CloudWatch alarms, you watch a single metric over a time period that you specify\. If the metric exceeds a given threshold, a notification is sent to an Amazon SNS topic or AWS Auto Scaling policy\. CloudWatch alarms don't invoke actions because they are in a particular state\. Rather, the state must have changed and been maintained for a specified number of periods\. For more information, see [](monitoring-cloudwatch.md)\.
+Using CloudWatch alarms, you watch a single metric over a time period that you specify\. If the metric exceeds a given threshold, a notification is sent to an Amazon SNS topic or AWS Auto Scaling policy\. CloudWatch alarms don't invoke actions because they are in a particular state\. Rather, the state must have changed and been maintained for a specified number of periods\. For more information, see [Monitoring with CloudWatch](monitoring-cloudwatch.md)\.
 
 ## AWS CloudTrail Logs<a name="incident-response-cloudtrail-logs"></a>
 
-CloudTrail provides a record of actions taken by a user, role, or an AWS service in AWS Elemental MediaStore\. Using the information collected by CloudTrail, you can determine the request that was made to MediaStore, the IP address from which the request was made, who made the request, when it was made, and additional details\. For more information, see [](logging-using-cloudtrail.md)\.
+CloudTrail provides a record of actions taken by a user, role, or an AWS service in AWS Elemental MediaStore\. Using the information collected by CloudTrail, you can determine the request that was made to MediaStore, the IP address from which the request was made, who made the request, when it was made, and additional details\. For more information, see [Logging API Calls with CloudTrail](logging-using-cloudtrail.md)\.
 
 ## AWS Trusted Advisor<a name="incident-response-trust-advisor"></a>
 

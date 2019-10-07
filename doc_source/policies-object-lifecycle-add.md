@@ -2,8 +2,10 @@
 
 An object lifecycle policy lets you specify how long to store your objects in a container\. You set an expiration date, and after the expiration date AWS Elemental MediaStore deletes the objects\. To create the object lifecycle policy and attach it to a container, you use the AWS CLI\. If the container already has an object lifecycle policy, the service replaces the existing policy with the new policy\. It takes up to 20 minutes for the service to apply the new policy to the container\.
 
+For information about how to construct a lifecycle policy, see [Components of an Object Lifecycle Policy](policies-object-lifecycle-components.md)\.
+
 **Note**  
-There might be a slight lag between the expiration of an object and the deletion of the object\. However, changes in billing happen as soon as the object expires\. For example, if a lifecycle rule specifies 10 `days_since_create`, the account isn't billed for the object after the object is 10 days old, even if the object isn't deleted yet\.
+For delete object rules \(objects expire within days\), there might be a slight lag between the expiration of an object and the deletion of the object\. However, changes in billing happen as soon as the object expires\. For example, if a lifecycle rule specifies 10 `days_since_create`, the account isn't billed for the object after the object is 10 days old, even if the object isn't deleted yet\.
 
 **To create an object lifecycle policy \(AWS CLI\)**
 
@@ -20,6 +22,17 @@ There might be a slight lag between the expiration of an object and the deletion
                    ],
                    "days_since_create": [
                        {"numeric": [">" , 28]}
+                   ]
+               },
+               "action": "EXPIRE"
+           },
+           {
+               "definition": {
+                   "path": [ 
+                       {"wildcard": "AwardsShow/index*.m3u8"}
+                   ],
+                   "seconds_since_create": [
+                       {"numeric": [">" , 8]}
                    ]
                },
                "action": "EXPIRE"

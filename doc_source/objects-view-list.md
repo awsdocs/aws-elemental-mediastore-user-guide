@@ -47,6 +47,8 @@ You can use the AWS Elemental MediaStore console to view items \(objects and fol
       ]
   }
   ```
+**Note**  
+Objects that are subject to a `seconds_since_create` rule are not included in a `list-items` response\.
 
 **To view a list of objects and folders in a specific folder \(AWS CLI\)**
 + In the AWS CLI, use the `list-items` command, with the specified folder name at the end of the request:
@@ -75,3 +77,5 @@ You can use the AWS Elemental MediaStore console to view items \(objects and fol
       ]
   }
   ```
+**Note**  
+Objects that are subject to a `seconds_since_create` rule are not included in a `list-items` response\.
