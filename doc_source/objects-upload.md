@@ -6,7 +6,7 @@ You can use the MediaStore console or the AWS CLI to upload objects\.
 
 MediaStore supports chunked transfer of objects, which reduces latency by making an object available for downloading while it is still being uploaded\. To use this capability, set the object's upload availability to `streaming`\. You can set the value of this header when you [upload the object using the API](https://docs.aws.amazon.com/mediastore/latest/apireference/API_objstore_PutObject.html)\. If you don't specify this header in your request, MediaStore assigns the default value of `standard` for the object’s upload availability\. 
 
-Object sizes are limited to 25 MB for standard upload availability and 10 MB for streaming upload availability\.
+Object sizes can't exceed 25 MB for standard upload availability and 10 MB for streaming upload availability\.
 
 **Note**  
 Object file names can contain only letters, numbers, periods \(\.\), underscores \(\_\), tildes \(\~\), and hyphens \(\-\)\. 

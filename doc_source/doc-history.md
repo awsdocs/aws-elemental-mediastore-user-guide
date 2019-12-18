@@ -6,12 +6,12 @@ The following table describes the documentation for this release of AWS Elementa
 | --- |--- |--- |
 | [Object lifecycle policies](policies-object-lifecycle-components.md) | You can now add a rule to your object lifecycle policy that indicates an expiration by age in seconds\. | September 13, 2019 | 
 | [AWS CloudFormation support](containers-create.md) | You can now use an AWS CloudFormation template to create a container automatically\. The AWS CloudFormation template manages data for five API actions: creating a container, setting access logging, updating the default container policy, adding a cross\-origin resource sharing \(CORS\) policy, and adding an object lifecycle policy\. | May 17, 2019 | 
-| [Limits for streaming upload availability](limits.md) | For objects with streaming upload availability \(chunked transfer of objects\), the `PutObject` operation is limited to 10 TPS and the `GetObject` operation is limited to 25 TPS\. | April 8, 2019 | 
+| [Quotas for streaming upload availability](quotas.md) | For objects with streaming upload availability \(chunked transfer of objects\), the `PutObject` operation can't exceed 10 TPS and the `GetObject` operation can't exceed 25 TPS\. | April 8, 2019 | 
 | [Chunked transfer of objects](objects-upload.md) | Added support for chunked transfer of objects\. This capability allows you to specify that an object is available for downloading before the object is uploaded completely\. | April 5, 2019 | 
 | [Access logging](monitoring-cloudwatch-logs.md) | AWS Elemental MediaStore now supports access logging, which provides detailed records for the requests that are made to objects in a container\. | February 25, 2019 | 
 | [Object lifecycle policies](policies-object-lifecycle.md) | Added support for object lifecycle policies, which govern the expiration date of objects within the current container\. | December 12, 2018 | 
-| [Increased object size limit](limits.md) | The limit for an object's size is now 25 MB\. | October 10, 2018 | 
-| [Increased object size limit](limits.md) | The limit for an object's size is now 20 MB\. | September 6, 2018 | 
+| [Increased object size quota](quotas.md) | The quota for an object's size is now 25 MB\. | October 10, 2018 | 
+| [Increased object size quota](quotas.md) | The quota for an object's size is now 20 MB\. | September 6, 2018 | 
 | [AWS CloudTrail integration](logging-using-cloudtrail.md) | The CloudTrail integration content has been updated to align with recent changes to the CloudTrail service\. | July 12, 2018 | 
 | [CDN collaboration](cdns.md) | Added information about how to use AWS Elemental MediaStore with a content delivery network \(CDN\) such as Amazon CloudFront\. | April 14, 2018 | 
 | [CORS configurations](cors-policy.md) | AWS Elemental MediaStore now supports cross\-origin resource sharing \(CORS\), which allows client web applications that are loaded in one domain to interact with resources in a different domain\. | February 7, 2018 | 

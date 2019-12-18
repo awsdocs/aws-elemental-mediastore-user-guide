@@ -1,6 +1,6 @@
 # Creating a Container<a name="containers-create"></a>
 
-You can create up to 100 containers for each AWS account\. However, there is no limit to the number of folders that you can create in each of those containers\. In addition, there is no limit to the number of objects that you can upload to each container\.
+You can create up to 100 containers for each AWS account\. You can create as many folders as you want, as long as they are not nested more than 10 levels within a container\. In addition, you can upload as many objects as you want to each container\.
 
 **Tip**  
 You can also create a container automatically by using an AWS CloudFormation template\. The AWS CloudFormation template manages data for five API actions: creating a container, setting access logging, updating the default container policy, adding a cross\-origin resource sharing \(CORS\) policy, and adding an object lifecycle policy\. For more information, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-mediastore-container.html)\.
