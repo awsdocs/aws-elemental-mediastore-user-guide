@@ -26,7 +26,7 @@ A transient data rule sets objects to expire within seconds\. An example of a ru
         },
 ```
 
-This rule has three parts:
+Transient data rules have three parts:
 + `path`: Always set to `wildcard`\. You use this part to define which objects you want to delete\. You can use one or more wildcards, represented by an asterisk \(\*\)\. Each wildcard represents any combination of zero or more characters\. For example, `"path": [ {"wildcard": "Football/index*.m3u8"} ],` applies to all files in the `Football` folder that match the pattern of `index*.m3u8` \(such as index\.m3u8, index1\.m3us8, and index123456\.m3u8\)\. You can include up to 10 paths in a single rule\.
 + `seconds_since_create`: Always set to `numeric`\. You can specify a value from 1\-300 seconds\. You can also set the operator to greater than \(>\) or greater than or equal to \(>=\)\.
 + `action`: Always set to `EXPIRE`\.
@@ -38,7 +38,7 @@ Objects that are subject to a transient data rule are not included in a `list-it
 
 ### Delete Object<a name="policies-object-lifecycle-components-rules-days"></a>
 
-A delete object rule sets objects to expire within days\. An example of a rule for deleting objects looks like this:
+A delete object rule sets objects to expire within days\. An example of two rules for deleting objects looks like this:
 
 ```
         {
@@ -49,11 +49,22 @@ A delete object rule sets objects to expire within days\. An example of a rule f
                 ]
             },
             "action": "EXPIRE"
+        },
+        {
+            "definition": {
+                "path": [ { "wildcard": "Football/*.ts" }  ],
+                "days_since_create": [
+                    {"numeric": [">" , 5]}
+                ]
+            },
+            "action": "EXPIRE"
         }
 ```
 
-This rule has three parts:
-+ `path`: Always set to `prefix`\. You use this part to specify the folder name\. If the parameter is empty \(`"path": [ { "prefix": "" } ],`\), the target is all objects that are stored anywhere within the current container\. You can include up to 10 paths in a single rule\.
+Delete object rules have three parts:
++ `path`: Set to either `prefix` or `wildcard`\. You can't mix `prefix` and `wildcard` in the same rule\. If you want to use both, you must create one rule for `prefix` and a separate rule for `wildcard`, as shown in the example above\. 
+  + `prefix` \- You set the path to `prefix` if you want to delete all objects within a particular folder\. If the parameter is empty \(`"path": [ { "prefix": "" } ],`\), the target is all objects that are stored anywhere within the current container\. You can include up to 10 `prefix` paths in a single rule\.
+  + `wildcard` \- You set the path to `wildcard` if you want to delete specific objects based on file name and/or file type\. You can use one or more wildcards, represented by an asterisk \(\*\)\. Each wildcard represents any combination of zero or more characters\. For example, `"path": [ {"wildcard": "Football/*.ts"} ],` applies to all files in the `Football` folder that match the pattern of `*.ts` \(such as filename\.ts, filename1\.ts, and filename123456\.ts\)\. You can include up to 10 `wildcard` paths in a single rule\. 
 + `days_since_create`: Always set to `numeric`\. You can specify a value from 1\-36,500 days\. You can also set the operator to greater than \(>\) or greater than or equal to \(>=\)\. 
 + `action`: Always set to `EXPIRE`\.
 
@@ -98,6 +109,15 @@ Suppose that a container named `LiveEvents` has four subfolders: `Football`, `Ba
         },
         {
             "definition": {
+                "path": [ { "wildcard": "Football/*.ts" }  ],
+                "days_since_create": [
+                    {"numeric": [">" , 20]}
+                ]
+            },
+            "action": "EXPIRE"
+        },
+        {
+            "definition": {
                 "path": [ 
                     {"wildcard": "Football/index*.m3u8"}
                 ],
@@ -115,4 +135,5 @@ The preceding policy specifies the following:
 + The first rule instructs AWS Elemental MediaStore to delete objects that are stored in the `LiveEvents/Football` folder and the `LiveEvents/Baseball` folder after they are older than 28 days\.
 + The second rule instructs the service to delete objects that are stored in the `LiveEvents/AwardsShow` folder when they are 15 days old or older\.
 + The third rule instructs the service to delete objects that are stored anywhere in the `LiveEvents` container after they are older than 40 days\. This rule applies to objects stored directly in the `LiveEvents` container, as well as objects stored in any of the container's four subfolders\.
-+ The fourth rule instructs the service to delete objects in the `Football` folder that match the pattern `index*.m3u8` after they are older than 15 seconds\. AWS Elemental MediaStore deletes these files 16 seconds after they are placed in the container\.
++ The fourth rule instructs the service to delete objects in the `Football` folder that match the pattern `*.ts` after they are older than 20 days\. 
++ The fifth rule instructs the service to delete objects in the `Football` folder that match the pattern `index*.m3u8` after they are older than 15 seconds\. MediaStore deletes these files 16 seconds after they are placed in the container\.

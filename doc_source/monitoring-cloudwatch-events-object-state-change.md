@@ -20,7 +20,7 @@ This event is published when an object's state has changed \(when the object has
     "ContainerName": "Movies",
     "Operation": "UPDATE",
     "Path":"TVShow/Episode1/Pilot.avi",
-    "ObjectSize":111122223333,
+    "ObjectSize":123456,
     "URL": "https://a832p1qeaznlp9.files.mediastore-us-west-2.com/Movies/MondayMornings/Episode1/Introduction.avi"
   }
 }
