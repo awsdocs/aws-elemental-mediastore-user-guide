@@ -2,4 +2,4 @@
 
 You can protect your data using tools that are provided by AWS\. AWS Elemental MediaStore allows you to create policies that control who can access your data:
 + A **container policy** is a resource\-based policy that governs access rights to all folders and objects in that container\. For more information, see [Container Policies in AWS Elemental MediaStore](policies.md)\.
-+ A **cross\-origin resource sharing \(CORS\) policy** selectively allows cross\-origin access to your MediaStore resources\. With CORS, you can allow client web applications that are loaded in one domain to interact with resources in a different domain\. For more information, see [Cross\-Origin Resource Sharing \(CORS\) in AWS Elemental MediaStore](cors-policy.md)
++ A **cross\-origin resource sharing \(CORS\) policy** selectively allows cross\-origin access to your MediaStore resources\. With CORS, you can allow client web applications that are loaded in one domain to interact with resources in a different domain\. For more information, see [Cross\-Origin Resource Sharing \(CORS\) Policies in AWS Elemental MediaStore](cors-policy.md)

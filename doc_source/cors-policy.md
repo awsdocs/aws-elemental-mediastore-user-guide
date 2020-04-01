@@ -1,4 +1,4 @@
-# Cross\-Origin Resource Sharing \(CORS\) in AWS Elemental MediaStore<a name="cors-policy"></a>
+# Cross\-Origin Resource Sharing \(CORS\) Policies in AWS Elemental MediaStore<a name="cors-policy"></a>
 
 Cross\-origin resource sharing \(CORS\) defines a way for client web applications that are loaded in one domain to interact with resources in a different domain\. With CORS support in AWS Elemental MediaStore, you can build rich client\-side web applications with MediaStore and selectively allow cross\-origin access to your MediaStore resources\.
 

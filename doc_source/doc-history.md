@@ -4,6 +4,7 @@ The following table describes the documentation for this release of AWS Elementa
 
 | Change | Description | Date | 
 | --- |--- |--- |
+| [Support for Amazon CloudWatch metrics](policies-metric.md) | You can set a metric policy to dictate which metrics MediaStore sends to CloudWatch\. | March 30, 2020 | 
 | [Wildcards in delete object rules](policies-object-lifecycle-components.md#policies-object-lifecycle-components-rules) | In an object lifecycle policy, you can now use a wildcard in a delete object rule\. This allows you to specify files based on their filename or extension that you want the service to delete after a certain number of days\. | December 20, 2019 | 
 | [Object lifecycle policies](policies-object-lifecycle-components.md) | You can now add a rule to your object lifecycle policy that indicates an expiration by age in seconds\. | September 13, 2019 | 
 | [AWS CloudFormation support](containers-create.md) | You can now use an AWS CloudFormation template to create a container automatically\. The AWS CloudFormation template manages data for five API actions: creating a container, setting access logging, updating the default container policy, adding a cross\-origin resource sharing \(CORS\) policy, and adding an object lifecycle policy\. | May 17, 2019 | 

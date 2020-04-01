@@ -44,7 +44,7 @@ Source
 The apparent internet address of the requester or the service principal of the AWS service making the call\. If intermediate proxies and firewalls obscure the address of the machine making the request, the value is set to null\.
 
 Requester  
-The user Amazon Resource Name \(ARN\) of the account that was used to make the request\. For unauthenticated requests, this value is `anonymous`\.
+The user Amazon Resource Name \(ARN\) of the account that was used to make the request\. For unauthenticated requests, this value is `anonymous`\. If the request fails before authentication is complete, this field might be missing from the log\. For such requests, the `ErrorCode` might identify the authorization issue\.
 
 AWSAccountId  
 The AWS account ID of the account that was used to make the request\.

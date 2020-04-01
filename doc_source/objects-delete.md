@@ -1,6 +1,6 @@
 # Deleting an Object<a name="objects-delete"></a>
 
-You can delete objects individually using the console or the AWS CLI\. Alternatively, you can attach an object lifecycle policy that automatically deletes objects after they reach a certain age in a container\.
+You can delete objects individually using the console or the AWS CLI\. Alternatively, you can attach an [object lifecycle policy](policies-object-lifecycle.md) to a container to automatically delete objects after they reach a certain age\.
 
 **Note**  
 When you delete the only object in a folder, AWS Elemental MediaStore automatically deletes the folder and any empty folders above that folder\. For example, suppose that you have a folder named `premium` that doesn’t contain any files but does contain one subfolder named `canada`\. The `canada` subfolder contains one file named `mlaw.ts`\. If you delete the file `mlaw.ts`, the service deletes both the `premium` and `canada` folders\. 
