@@ -1,4 +1,4 @@
-# Deleting an Object Lifecycle Policy<a name="policies-object-lifecycle-delete"></a>
+# Deleting an object lifecycle policy<a name="policies-object-lifecycle-delete"></a>
 
 When you delete an object lifecycle policy, it takes up to 20 minutes for the service to apply the change to the container\. 
 

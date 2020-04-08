@@ -1,4 +1,4 @@
-# Editing a CORS Policy<a name="cors-policy-editing"></a>
+# Editing a CORS policy<a name="cors-policy-editing"></a>
 
 Cross\-origin resource sharing \(CORS\) defines a way for client web applications that are loaded in one domain to interact with resources in a different domain\.
 

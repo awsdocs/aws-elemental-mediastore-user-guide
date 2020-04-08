@@ -1,4 +1,4 @@
-# Rules for Container Names<a name="containers-rules-for-names"></a>
+# Rules for container names<a name="containers-rules-for-names"></a>
 
 When you choose a name for your container, remember the following:
 + The name must be unique within the current account for the current AWS Region\.

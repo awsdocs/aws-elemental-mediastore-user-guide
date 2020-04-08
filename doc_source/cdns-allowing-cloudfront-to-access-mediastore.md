@@ -1,4 +1,4 @@
-# Allowing Amazon CloudFront to Access Your AWS Elemental MediaStore Container<a name="cdns-allowing-cloudfront-to-access-mediastore"></a>
+# Allowing Amazon CloudFront to access your AWS Elemental MediaStore container<a name="cdns-allowing-cloudfront-to-access-mediastore"></a>
 
 You can use Amazon CloudFront to serve the content that you store in a container in AWS Elemental MediaStore\. To get started, you attach a policy to your container that grants read access or greater to CloudFront\. 
 

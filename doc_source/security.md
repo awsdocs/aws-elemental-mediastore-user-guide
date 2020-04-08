@@ -9,9 +9,9 @@ Security is a shared responsibility between AWS and you\. The [shared responsibi
 This documentation helps you understand how to apply the shared responsibility model when using MediaStore\. The following topics show you how to configure MediaStore to meet your security and compliance objectives\. You also learn how to use other AWS services that help you to monitor and secure your MediaStore resources\. 
 
 **Topics**
-+ [Data Protection in AWS Elemental MediaStore](data-protection.md)
-+ [Identity and Access Management in AWS Elemental MediaStore](security-iam.md)
-+ [Logging and Monitoring in AWS Elemental MediaStore](incident-response.md)
-+ [Compliance Validation for AWS Elemental MediaStore](mediastore-compliance.md)
++ [Data protection in AWS Elemental MediaStore](data-protection.md)
++ [Identity and access management in AWS Elemental MediaStore](security-iam.md)
++ [Logging and monitoring in AWS Elemental MediaStore](incident-response.md)
++ [Compliance validation for AWS Elemental MediaStore](mediastore-compliance.md)
 + [Resilience in AWS Elemental MediaStore](disaster-recovery-resiliency.md)
-+ [Infrastructure Security in AWS Elemental MediaStore](infrastructure-security.md)
++ [Infrastructure security in AWS Elemental MediaStore](infrastructure-security.md)

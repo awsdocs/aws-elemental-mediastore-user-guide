@@ -1,4 +1,4 @@
-# Viewing a Metric Policy<a name="policies-metric-view"></a>
+# Viewing a metric policy<a name="policies-metric-view"></a>
 
 You can use the console or the AWS CLI to view the metric policy of a container\.
 

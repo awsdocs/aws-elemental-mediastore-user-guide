@@ -1,4 +1,4 @@
-# Compliance Validation for AWS Elemental MediaStore<a name="mediastore-compliance"></a>
+# Compliance validation for AWS Elemental MediaStore<a name="mediastore-compliance"></a>
 
 AWS Elemental MediaStore is not in scope of any AWS compliance programs\. 
 

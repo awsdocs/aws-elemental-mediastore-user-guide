@@ -1,16 +1,16 @@
-# Components of an Object Lifecycle Policy<a name="policies-object-lifecycle-components"></a>
+# Components of an object lifecycle policy<a name="policies-object-lifecycle-components"></a>
 
 Object lifecycle policies govern how long objects remain in an AWS Elemental MediaStore container\. Each object lifecycle policy consists of one or more rules, which dictate the lifespan of objects\. A rule can apply to one folder, multiple folders, or the entire container\. 
 
 You can attach one object lifecycle policy to a container, and each object lifecycle policy can contain up to 10 rules\. You can't assign an object lifecycle policy to an individual object\. 
 
-## Rules in an Object Lifecycle Policy<a name="policies-object-lifecycle-components-rules"></a>
+## Rules in an object lifecycle policy<a name="policies-object-lifecycle-components-rules"></a>
 
 You can create two types of rules:
-+ [Transient Data](#policies-object-lifecycle-components-rules-seconds)
-+ [Delete Object](#policies-object-lifecycle-components-rules-days)
++ [Transient data](#policies-object-lifecycle-components-rules-seconds)
++ [Delete object](#policies-object-lifecycle-components-rules-days)
 
-### Transient Data<a name="policies-object-lifecycle-components-rules-seconds"></a>
+### Transient data<a name="policies-object-lifecycle-components-rules-seconds"></a>
 
 A transient data rule sets objects to expire within seconds\. An example of a rule for transient data looks like this:
 
@@ -36,7 +36,7 @@ For transient data rules \(objects expire within seconds\), there is no lag betw
 **Note**  
 Objects that are subject to a transient data rule are not included in a `list-items` response\.
 
-### Delete Object<a name="policies-object-lifecycle-components-rules-days"></a>
+### Delete object<a name="policies-object-lifecycle-components-rules-days"></a>
 
 A delete object rule sets objects to expire within days\. An example of two rules for deleting objects looks like this:
 

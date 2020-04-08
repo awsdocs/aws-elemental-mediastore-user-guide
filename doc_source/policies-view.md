@@ -1,4 +1,4 @@
-# Viewing a Container Policy<a name="policies-view"></a>
+# Viewing a container policy<a name="policies-view"></a>
 
 You can use the console or the AWS CLI to view the resource\-based policy of a container\.
 

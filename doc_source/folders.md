@@ -11,6 +11,6 @@ For example, suppose you have a container named `movies`, and you upload a file 
 AWS Elemental MediaStore automatically deletes a folder when you delete the last object in that folder\. The service also deletes any empty folders above that folder\. For example, suppose that you have a folder named premium that doesn’t contain any files but does contain one subfolder named `canada`\. The `canada` subfolder contains one file named `mlaw.ts`\. If you delete the file `mlaw.ts`, the service deletes both the `premium` and `canada` folders\. This automatic deletion applies only to folders\. The service does not delete empty containers\.
 
 **Topics**
-+ [Rules for Folder Names](folders-rules-for-names.md)
-+ [Creating a Folder](folders-create.md)
-+ [Deleting a Folder](folders-delete.md)
++ [Rules for folder names](folders-rules-for-names.md)
++ [Creating a folder](folders-create.md)
++ [Deleting a folder](folders-delete.md)

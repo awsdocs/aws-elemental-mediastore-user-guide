@@ -1,6 +1,6 @@
-# Adding a Metric Policy<a name="policies-metric-add"></a>
+# Adding a metric policy<a name="policies-metric-add"></a>
 
-A metric policy contains rules that dictate which metrics AWS Elemental MediaStore sends to Amazon CloudWatch\. For examples of metric policies, see [Example Metric Policies](policies-metric-examples.md)\.
+A metric policy contains rules that dictate which metrics AWS Elemental MediaStore sends to Amazon CloudWatch\. For examples of metric policies, see [Example metric policies](policies-metric-examples.md)\.
 
 **To add a metric policy \(console\)**
 

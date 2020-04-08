@@ -1,4 +1,4 @@
-# Enabling Access Logging for a Container<a name="monitoring-cloudwatch-logs-enable"></a>
+# Enabling access logging for a container<a name="monitoring-cloudwatch-logs-enable"></a>
 
 By default, AWS Elemental MediaStore doesn't collect access logs\. When you enable access logging on a container, MediaStore delivers access logs for objects stored in that container to Amazon CloudWatch\. The access logs provide detailed records for requests that are made to any object stored in the container\. This information can include the request type, the resources that are specified in the request, and the time and date that the request was processed\. 
 

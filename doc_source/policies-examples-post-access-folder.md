@@ -1,4 +1,4 @@
-# Example Container Policy: Post Access to an AWS Service to a Folder<a name="policies-examples-post-access-folder"></a>
+# Example container policy: Post access to an AWS service to a folder<a name="policies-examples-post-access-folder"></a>
 
 This policy allows another AWS service to post objects in AWS Elemental MediaStore\. It allows access to `PutObject` on any object and allows this access to a specific AWS service\. It specifies that this access has the condition of requiring HTTPS for the operation \(this condition must always be included when providing access to `PutObject`\):
 

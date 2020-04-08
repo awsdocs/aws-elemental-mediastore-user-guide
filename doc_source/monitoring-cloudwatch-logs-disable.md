@@ -1,4 +1,4 @@
-# Disabling Access Logging for a Container<a name="monitoring-cloudwatch-logs-disable"></a>
+# Disabling access logging for a container<a name="monitoring-cloudwatch-logs-disable"></a>
 
 When you disable access logging on a container, AWS Elemental MediaStore stops sending access logs to Amazon CloudWatch\. These access logs are not saved and are not retrievable\.
 

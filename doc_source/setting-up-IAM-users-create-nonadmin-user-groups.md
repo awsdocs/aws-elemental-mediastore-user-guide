@@ -1,4 +1,4 @@
-# Step 1: Create User Groups<a name="setting-up-IAM-users-create-nonadmin-user-groups"></a>
+# Step 1: Create user groups<a name="setting-up-IAM-users-create-nonadmin-user-groups"></a>
 
 You can create a user group for each AWS Elemental MediaStore policy and assign users to a group rather than attaching individual policies to each user\. Using the following procedure, create two user groups: one for the `AWSElementalMediaStoreFullAccess` policy and one for the `AWSElementalMediaStoreReadOnly` policy\.
 

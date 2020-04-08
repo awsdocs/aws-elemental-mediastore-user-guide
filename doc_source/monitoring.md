@@ -1,4 +1,4 @@
-# Monitoring and Tagging in AWS Elemental MediaStore<a name="monitoring"></a>
+# Monitoring and tagging in AWS Elemental MediaStore<a name="monitoring"></a>
 
 Monitoring is an important part of maintaining the reliability, availability, and performance of AWS Elemental MediaStore and your other AWS solutions\. AWS provides the following monitoring tools to watch MediaStore, report when something is wrong, and take automatic actions when appropriate:
 + *AWS CloudTrail* captures API calls and related events made by or on behalf of your AWS account and delivers the log files to an Amazon S3 bucket that you specify\. You can identify which users and accounts called AWS, the source IP address from which the calls were made, and when the calls occurred\. For more information, see the [AWS CloudTrail User Guide](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/)\.
@@ -9,6 +9,6 @@ Monitoring is an important part of maintaining the reliability, availability, an
 You can also assign metadata to your MediaStore containers in the form of tags\. Each tag is a label that consists of a key and value that you define\. Tags can make it easier to manage, search for, and filter resources\. You can use tags to organize your AWS resources in the AWS Management Console, create usage and billing reports across all of your AWS resources, and filter resources during infrastructure automation activities\.
 
 **Topics**
-+ [Logging AWS Elemental MediaStore API Calls with AWS CloudTrail](logging-using-cloudtrail.md)
++ [Logging AWS Elemental MediaStore API calls with AWS CloudTrail](logging-using-cloudtrail.md)
 + [Monitoring AWS Elemental MediaStore with Amazon CloudWatch](monitoring-cloudwatch.md)
-+ [Tagging AWS Elemental MediaStore Resources](tagging.md)
++ [Tagging AWS Elemental MediaStore resources](tagging.md)

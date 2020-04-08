@@ -1,4 +1,4 @@
-# Viewing the Details of an Object<a name="objects-view-details"></a>
+# Viewing the details of an object<a name="objects-view-details"></a>
 
 After you upload an object, AWS Elemental MediaStore stores details such as the modification date, content length, ETag \(entity tag\), and content type\.
 

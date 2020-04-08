@@ -1,4 +1,4 @@
-# Viewing a List of Containers<a name="containers-view-list"></a>
+# Viewing a list of containers<a name="containers-view-list"></a>
 
 You can view a list of all the containers that are associated with your account\.
 

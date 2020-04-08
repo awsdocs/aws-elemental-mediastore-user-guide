@@ -10,8 +10,8 @@ In MediaStore, you can upload, download, and delete objects:
 MediaStore accepts all file types\. 
 
 **Topics**
-+ [Uploading an Object](objects-upload.md)
-+ [Viewing a List of Objects](objects-view-list.md)
-+ [Viewing the Details of an Object](objects-view-details.md)
-+ [Downloading an Object](objects-download.md)
-+ [Deleting an Object](objects-delete.md)
++ [Uploading an object](objects-upload.md)
++ [Viewing a list of objects](objects-view-list.md)
++ [Viewing the details of an object](objects-view-details.md)
++ [Downloading an object](objects-download.md)
++ [Deleting objects](objects-delete-main.md)

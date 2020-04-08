@@ -1,8 +1,8 @@
-# AWS Elemental MediaStore Container State Change Event<a name="monitoring-cloudwatch-events-container-state-change"></a>
+# AWS Elemental MediaStore container state change event<a name="monitoring-cloudwatch-events-container-state-change"></a>
 
 This event is published when a container’s state has changed \(when a container has been added or deleted\)\. For information about subscribing to this event, see [Amazon CloudWatch](https://docs.aws.amazon.com/cloudwatch/)\.
 
-**Container Created**
+**Container created**
 
 ```
 {
@@ -24,7 +24,7 @@ This event is published when a container’s state has changed \(when a containe
 }
 ```
 
-**Container Removed**
+**Container removed**
 
 ```
 {

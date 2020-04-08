@@ -1,4 +1,4 @@
-# Example Container Policy: Container\-Level and Path\-Level Metrics<a name="policies-metric-examples-container-and-path-level"></a>
+# Example metric policy: Container\-level and path\-level metrics<a name="policies-metric-examples-container-and-path-level"></a>
 
 This example policy indicates that AWS Elemental MediaStore should send metrics to Amazon CloudWatch at the container level\. In addition, MediaStore should send metrics for objects in two specific folders: `baseball/saturday` and `football/saturday`\. The metrics for MediaStore requests are as follows:
 + Requests to the `baseball/saturday` folder have a CloudWatch dimension of `ObjectGroupName=baseballGroup`\.

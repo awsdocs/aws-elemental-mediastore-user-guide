@@ -1,4 +1,4 @@
-# CORS Use\-case Scenarios<a name="cors-policy-use-case-scenarios"></a>
+# CORS use\-case scenarios<a name="cors-policy-use-case-scenarios"></a>
 
 The following are example scenarios for using CORS:
 + Scenario 1: Suppose you are distributing live streaming video in an AWS Elemental MediaStore container named *LiveVideo*\. Your users load the video manifest endpoint `http://livevideo.mediastore.ap-southeast-2.amazonaws.com` from a specific origin like `www.example.com`\. You want to use a JavaScript video player to access videos that are originated from this container via unauthenticated `GET` and `PUT` requests\. A browser would typically block JavaScript from allowing those requests, but you can set a CORS policy on your container to explicitly enable these requests from `www.example.com`\.

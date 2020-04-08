@@ -1,4 +1,4 @@
-# Deleting a CORS Policy<a name="cors-policy-deleting"></a>
+# Deleting a CORS policy<a name="cors-policy-deleting"></a>
 
 Cross\-origin resource sharing \(CORS\) defines a way for client web applications that are loaded in one domain to interact with resources in a different domain\. Deleting the CORS policy from a container removes permissions for cross\-origin requests\.
 

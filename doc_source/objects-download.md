@@ -1,4 +1,4 @@
-# Downloading an Object<a name="objects-download"></a>
+# Downloading an object<a name="objects-download"></a>
 
 You can use the console to download an object\. You can use the AWS CLI to download an object or only part of an object\.
 

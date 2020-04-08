@@ -1,4 +1,4 @@
-# AWS Elemental MediaStore Related Information<a name="resources"></a>
+# AWS Elemental MediaStore related information<a name="resources"></a>
 
 The following table lists related resources that you'll find useful as you work with AWS Elemental MediaStore\.
 + ** [Classes & Workshops](https://aws.amazon.com/training/course-descriptions/)** – Links to role\-based and specialty courses as well as self\-paced labs to help sharpen your AWS skills and gain practical experience\.

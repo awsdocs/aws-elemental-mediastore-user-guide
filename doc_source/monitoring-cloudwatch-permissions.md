@@ -1,4 +1,4 @@
-# Setting Up Permissions for Amazon CloudWatch<a name="monitoring-cloudwatch-permissions"></a>
+# Setting up permissions for Amazon CloudWatch<a name="monitoring-cloudwatch-permissions"></a>
 
 Use AWS Identity and Access Management \(IAM\) to create a role that gives AWS Elemental MediaStore access to Amazon CloudWatch\. You must perform these steps for CloudWatch Logs to be published for your account\. CloudWatch automatically publishes metrics for your account\.
 

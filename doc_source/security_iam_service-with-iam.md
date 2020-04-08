@@ -1,8 +1,8 @@
-# How AWS Elemental MediaStore Works with IAM<a name="security_iam_service-with-iam"></a>
+# How AWS Elemental MediaStore works with IAM<a name="security_iam_service-with-iam"></a>
 
 Before you use IAM to manage access to MediaStore, you should understand what IAM features are available to use with MediaStore\. To get a high\-level view of how MediaStore and other AWS services work with IAM, see [AWS Services That Work with IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.html) in the *IAM User Guide*\.
 
-## MediaStore Identity\-Based Policies<a name="security_iam_service-with-iam-id-based-policies"></a>
+## MediaStore identity\-based policies<a name="security_iam_service-with-iam-id-based-policies"></a>
 
 With IAM identity\-based policies, you can specify allowed or denied actions and resources as well as the conditions under which actions are allowed or denied\. MediaStore supports specific actions, resources, and condition keys\. To learn about all of the elements that you use in a JSON policy, see [IAM JSON Policy Elements Reference](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements.html) in the *IAM User Guide*\.
 
@@ -60,7 +60,7 @@ Some MediaStore actions, such as those for creating resources, can't be performe
 
 To see a list of MediaStore resource types and their ARNs, see [Resources Defined by AWS Elemental MediaStore](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_awselementalmediastore.html#awselementalmediastore-resources-for-iam-policies) in the *IAM User Guide*\. To learn with which actions you can specify the ARN of each resource, see [Actions Defined by AWS Elemental MediaStore](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_awselementalmediastore.html#awselementalmediastore-actions-as-permissions)\.
 
-### Condition Keys<a name="security_iam_service-with-iam-id-based-policies-conditionkeys"></a>
+### Condition keys<a name="security_iam_service-with-iam-id-based-policies-conditionkeys"></a>
 
 MediaStore does not provide any service\-specific condition keys, but it does support using some global condition keys\. To see all AWS global condition keys, see [AWS Global Condition Context Keys](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html) in the *IAM User Guide*\.
 
@@ -68,7 +68,7 @@ MediaStore does not provide any service\-specific condition keys, but it does su
 
 For examples of MediaStore identity\-based policies, see [AWS Elemental MediaStore Identity\-Based Policy Examples](security_iam_id-based-policy-examples.md)\.
 
-## MediaStore Resource\-Based Policies<a name="security_iam_service-with-iam-resource-based-policies"></a>
+## MediaStore Resource\-based policies<a name="security_iam_service-with-iam-resource-based-policies"></a>
 
 Resource\-based policies are JSON policy documents that specify what actions a specified principal can perform on the MediaStore resource and under what conditions\. MediaStore supports resource\-based permissions policies for MediaStore containers\. Resource\-based policies let you grant usage permission to other accounts on a per\-resource basis\. You can also use a resource\-based policy to allow an AWS service to access your MediaStore containers\.
 
@@ -76,33 +76,33 @@ To enable cross\-account access, you can specify an entire account or IAM entiti
 
 The MediaStore service supports only one type of resource\-based policy called a container policy, which is attached to a container\. This policy defines which principal entities \(accounts, users, roles, and federated users\) can perform actions on the container\.
 
-To learn how to attach a resource\-based policy to a container, see [Container Policies in AWS Elemental MediaStore](policies.md)\.
+To learn how to attach a resource\-based policy to a container, see [Container policies in AWS Elemental MediaStore](policies.md)\.
 
 ### Examples<a name="security_iam_service-with-iam-resource-based-policies-examples"></a>
 
-For examples of MediaStore resource\-based policies, see [Example Container Policies](policies-examples.md),
+For examples of MediaStore resource\-based policies, see [Example container policies](policies-examples.md),
 
-## Authorization Based on MediaStore Tags<a name="security_iam_service-with-iam-tags"></a>
+## Authorization based on MediaStore tags<a name="security_iam_service-with-iam-tags"></a>
 
 MediaStore doesn't support tagging resources or controlling access based on tags\.
 
-## MediaStore IAM Roles<a name="security_iam_service-with-iam-roles"></a>
+## MediaStore IAM roles<a name="security_iam_service-with-iam-roles"></a>
 
 An [IAM role](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html) is an entity within your AWS account that has specific permissions\.
 
-### Using Temporary Credentials with MediaStore<a name="security_iam_service-with-iam-roles-tempcreds"></a>
+### Using temporary credentials with MediaStore<a name="security_iam_service-with-iam-roles-tempcreds"></a>
 
 You can use temporary credentials to sign in with federation, assume an IAM role, or to assume a cross\-account role\. You obtain temporary security credentials by calling AWS STS API operations such as [AssumeRole](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html) or [GetFederationToken](https://docs.aws.amazon.com/STS/latest/APIReference/API_GetFederationToken.html)\. 
 
 MediaStore supports using temporary credentials\. 
 
-### Service\-Linked Roles<a name="security_iam_service-with-iam-roles-service-linked"></a>
+### Service\-linked roles<a name="security_iam_service-with-iam-roles-service-linked"></a>
 
 [Service\-linked roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_terms-and-concepts.html#iam-term-service-linked-role) allow AWS services to access resources in other services to complete an action on your behalf\. Service\-linked roles appear in your IAM account and are owned by the service\. An IAM administrator can view but not edit the permissions for service\-linked roles\.
 
 MediaStore does not support service\-linked roles\. 
 
-### Service Roles<a name="security_iam_service-with-iam-roles-service"></a>
+### Service roles<a name="security_iam_service-with-iam-roles-service"></a>
 
 This feature allows a service to assume a [service role](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_terms-and-concepts.html#iam-term-service-role) on your behalf\. This role allows the service to access resources in other services to complete an action on your behalf\. Service roles appear in your IAM account and are owned by the account\. This means that an IAM administrator can change the permissions for this role\. However, doing so might break the functionality of the service\.
 

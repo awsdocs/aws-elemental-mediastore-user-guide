@@ -1,4 +1,4 @@
-# Editing an Object Lifecycle Policy<a name="policies-object-lifecycle-change"></a>
+# Editing an object lifecycle policy<a name="policies-object-lifecycle-change"></a>
 
 You can't edit an existing object lifecycle policy\. However, you can change an existing policy by uploading a replacement policy\. It takes up to 20 minutes for the service to apply the updated policy to the container\. 
 

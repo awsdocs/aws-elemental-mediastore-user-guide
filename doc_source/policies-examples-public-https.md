@@ -1,4 +1,4 @@
-# Example Container Policy: Public Read Access over HTTPS<a name="policies-examples-public-https"></a>
+# Example container policy: Public read access over HTTPS<a name="policies-examples-public-https"></a>
 
 This example policy allows users to retrieve an object through an HTTPS request\. It allows read access to anyone over a secured SSL/TLS connection: authenticated users and anonymous users \(users who are not logged in\)\. The statement has the name `PublicReadOverHttps`\. It allows access to the `GetObject` and `DescribeObject` operations on any object \(as specified by the \* at the end of the resource path\)\. It specifies that this access has the condition of requiring HTTPS for the operations:
 

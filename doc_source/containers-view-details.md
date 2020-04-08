@@ -1,4 +1,4 @@
-# Viewing the Details for a Container<a name="containers-view-details"></a>
+# Viewing the details for a container<a name="containers-view-details"></a>
 
 Details for a container include the container policy, endpoint, ARN, and creation time\.
 
@@ -10,7 +10,7 @@ Details for a container include the container policy, endpoint, ARN, and creatio
 
    The container details page appears\. This page is divided into two sections:
    + The **Objects** section, which lists the objects and folders in the container\.
-   + The **Container** policy section, which shows the resource\-based policy that is associated with this container\. For information about resource policies, see [Container Policies](policies.md)\.
+   + The **Container** policy section, which shows the resource\-based policy that is associated with this container\. For information about resource policies, see [Container policies](policies.md)\.
 
 **To view the details for a container \(AWS CLI\)**
 + In the AWS CLI, use the `describe-container` command:

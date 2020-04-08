@@ -1,4 +1,4 @@
-# Viewing a List of Objects<a name="objects-view-list"></a>
+# Viewing a list of objects<a name="objects-view-list"></a>
 
 You can use the AWS Elemental MediaStore console to view items \(objects and folders\) stored in the top\-most level of a container or in a folder\. Items stored in a subfolder of the current container or folder will not be displayed\. You can use the AWS CLI to view a list of objects and folders within a container, regardless of how many folders or subfolders are within the container\.
 

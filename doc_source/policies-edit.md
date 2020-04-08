@@ -1,4 +1,4 @@
-# Editing a Container Policy<a name="policies-edit"></a>
+# Editing a container policy<a name="policies-edit"></a>
 
 You can edit the permissions in the default container policy, or you can create a new policy that replaces the default policy\. It takes up to five minutes for the new policy to take effect\. 
 
@@ -8,7 +8,7 @@ You can edit the permissions in the default container policy, or you can create 
 
 1. On the **Containers** page, choose the container name\.
 
-1. Choose **Edit policy**\. For examples that show how to set different permissions, see [Example Container Policies](policies-examples.md)\.
+1. Choose **Edit policy**\. For examples that show how to set different permissions, see [Example container policies](policies-examples.md)\.
 
 1. Make the appropriate changes, and then choose **Save**\.
 

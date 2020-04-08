@@ -1,4 +1,4 @@
-# Example Container Policy: Cross\-Account Read Access—HTTP Enabled<a name="policies-examples-cross-acccount-http"></a>
+# Example container policy: Cross\-account read access—HTTP enabled<a name="policies-examples-cross-acccount-http"></a>
 
 This example policy allows users to retrieve an object through an HTTP request\. It allows this access to authenticated users with cross\-account access\. The object is not required to be hosted on a server with an SSL/TLS certificate:
 

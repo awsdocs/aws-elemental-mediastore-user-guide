@@ -1,4 +1,4 @@
-# AWS CLI Commands for AWS Elemental MediaStore<a name="cli-commands"></a>
+# AWS CLI commands for AWS Elemental MediaStore<a name="cli-commands"></a>
 
 The following table shows the AWS CLI commands that you can use to create or modify containers and objects in AWS Elemental MediaStore\.
 

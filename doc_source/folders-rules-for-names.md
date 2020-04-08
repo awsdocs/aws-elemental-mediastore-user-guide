@@ -1,4 +1,4 @@
-# Rules for Folder Names<a name="folders-rules-for-names"></a>
+# Rules for folder names<a name="folders-rules-for-names"></a>
 
 When you choose a name for your folder, remember the following:
 + The name must be unique only within its parent container or folder\. For example, you can create a folder named `myfolder` in two different containers: `movies/myfolder` and `sports/myfolder`\.

@@ -1,4 +1,4 @@
-# Access Log Format<a name="monitoring-cloudwatch-logs-format"></a>
+# Access log format<a name="monitoring-cloudwatch-logs-format"></a>
 
 The access log files consist of a sequence of JSON\-formatted log records, where each log record represents one request\. The order of the fields within the log can vary\. The following is an example log that consists of two log records:
 

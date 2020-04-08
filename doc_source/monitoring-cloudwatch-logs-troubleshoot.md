@@ -1,4 +1,4 @@
-# Troubleshooting Access Logging in AWS Elemental MediaStore<a name="monitoring-cloudwatch-logs-troubleshoot"></a>
+# Troubleshooting access logging in AWS Elemental MediaStore<a name="monitoring-cloudwatch-logs-troubleshoot"></a>
 
 When AWS Elemental MediaStore access logs do not appear in Amazon CloudWatch, refer to the following table for potential causes and resolutions\. 
 

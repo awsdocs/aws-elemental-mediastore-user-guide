@@ -1,4 +1,4 @@
-# Example Container Policy: Default<a name="policies-examples-default"></a>
+# Example container policy: Default<a name="policies-examples-default"></a>
 
 When you create a container, AWS Elemental MediaStore automatically attaches the following resource\-based policy: 
 

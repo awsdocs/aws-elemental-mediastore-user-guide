@@ -1,4 +1,4 @@
-# Creating a Container<a name="containers-create"></a>
+# Creating a container<a name="containers-create"></a>
 
 You can create up to 100 containers for each AWS account\. You can create as many folders as you want, as long as they are not nested more than 10 levels within a container\. In addition, you can upload as many objects as you want to each container\.
 
@@ -11,7 +11,7 @@ You can also create a container automatically by using an AWS CloudFormation tem
 
 1. On the **Containers** page, choose **Create container**\.
 
-1. For **Container** name, enter a name for the container\. For more information, see [Rules for Container Names](containers-rules-for-names.md)\.
+1. For **Container** name, enter a name for the container\. For more information, see [Rules for container names](containers-rules-for-names.md)\.
 
 1. Choose **Create container**\. AWS Elemental MediaStore adds the new container to a list of containers\. Initially, the status of the container is **Creating**, and then it changes to **Active**\.
 

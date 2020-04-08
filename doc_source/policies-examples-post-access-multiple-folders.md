@@ -1,4 +1,4 @@
-# Example Container Policy: Post Access to an AWS Service to Multiple Folders<a name="policies-examples-post-access-multiple-folders"></a>
+# Example container policy: Post access to an AWS service to multiple folders<a name="policies-examples-post-access-multiple-folders"></a>
 
 This policy is a variation on `MediaStorePostToSpecificPath` that shows how to set up access to two different paths:
 

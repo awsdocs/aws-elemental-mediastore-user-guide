@@ -1,4 +1,4 @@
-# Example Container Policy: Path\-Level Metrics With Overlapping Rules<a name="policies-metric-examples-overlapping-rules"></a>
+# Example metric policy: Path\-level metrics with overlapping rules<a name="policies-metric-examples-overlapping-rules"></a>
 
 This example policy indicates that AWS Elemental MediaStore should send metrics to Amazon CloudWatch at the container level\. In addition, MediaStore should send metrics for two folders: `sports/football/saturday` and `sports/football`\. 
 

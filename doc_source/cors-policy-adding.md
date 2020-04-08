@@ -1,4 +1,4 @@
-# Adding a CORS Policy to a Container<a name="cors-policy-adding"></a>
+# Adding a CORS policy to a container<a name="cors-policy-adding"></a>
 
 This section explains how to add a cross\-origin resource sharing \(CORS\) configuration to an AWS Elemental MediaStore container\. CORS allows client web applications that are loaded in one domain to interact with resources in another domain\.
 

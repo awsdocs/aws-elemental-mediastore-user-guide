@@ -1,4 +1,4 @@
-# Deleting a Container<a name="containers-delete"></a>
+# Deleting a container<a name="containers-delete"></a>
 
 You can delete a container only if it has no objects\. 
 
