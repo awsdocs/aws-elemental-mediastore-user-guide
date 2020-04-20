@@ -1,6 +1,6 @@
 # Emptying a container<a name="objects-empty-container"></a>
 
-You can empty a container to delete all objects that are stored within the container\. Alternatively, you can [add an object lifecycle policy](policies-object-lifecycle-add.md) to automatically delete objects after they reach a certain age in a container, or you can [delete objects individually](objects-delete.md)\.
+You can empty a container to delete all objects that are stored within the container\. Alternatively, you can add an [object lifecycle policy](policies-object-lifecycle-examples-empty-container.md) to automatically delete objects after they reach a certain age in a container, or you can [delete objects individually](objects-delete.md)\.
 
 **To empty a container \(console\)**
 

@@ -6,13 +6,16 @@ You can attach one object lifecycle policy to a container, and each object lifec
 
 ## Rules in an object lifecycle policy<a name="policies-object-lifecycle-components-rules"></a>
 
-You can create two types of rules:
+You can create three types of rules:
 + [Transient data](#policies-object-lifecycle-components-rules-seconds)
 + [Delete object](#policies-object-lifecycle-components-rules-days)
++ [Lifecycle transition](#policies-object-lifecycle-components-rules-lifecycle-transition)
 
 ### Transient data<a name="policies-object-lifecycle-components-rules-seconds"></a>
 
-A transient data rule sets objects to expire within seconds\. An example of a rule for transient data looks like this:
+A transient data rule sets objects to expire within seconds\. This type of rule applies only to objects that are added to the container after the policy becomes effective\. It takes up to 20 minutes for MediaStore to apply the new policy to the container\.
+
+An example of a rule for transient data looks like this:
 
 ```
         {
@@ -70,6 +73,39 @@ Delete object rules have three parts:
 
 For delete object rules \(objects expire within days\), there might be a slight lag between the expiration of an object and the deletion of the object\. However, changes in billing happen as soon as the object expires\. For example, if a lifecycle rule specifies 10 `days_since_create`, the account isn't billed for the object after the object is 10 days old, even if the object isn't deleted yet\.
 
+### Lifecycle transition<a name="policies-object-lifecycle-components-rules-lifecycle-transition"></a>
+
+A lifecycle transition rule sets objects to be moved to the infrequent access \(IA\) storage class after they reach a certain age, measured in days\. Objects that are stored in the IA storage class have different rates for storage and retrieval than objects that are stored in the standard storage class\. For more information, see [MediaStore Pricing](https://aws.amazon.com/mediastore/pricing/)\.
+
+Once an object has moved to the IA storage class, you can't move it back to the standard storage class\.
+
+An example of a lifecycle transition rule looks like this:
+
+```
+{ 
+    "rules": [
+        {
+            "definition": {
+                "path": [ 
+                    {"prefix": "AwardsShow/"}
+                ],
+                "days_since_create": [
+                    {"numeric": [">=" , 30]}
+                ]
+            },
+            "action": "ARCHIVE"
+        }
+    ]
+}
+```
+
+Lifecycle transition rules have three parts:
++ `path`: Set to either `prefix` or `wildcard`\. You can't mix `prefix` and `wildcard` in the same rule\. If you want to use both, you must create one rule for `prefix` and a separate rule for `wildcard`\. 
+  + `prefix` \- You set the path to `prefix` if you want to transition all objects within a particular folder to the IA storage class\. If the parameter is empty \(`"path": [ { "prefix": "" } ],`\), the target is all objects that are saved anywhere within the current container\. You can include up to 10 `prefix` paths in a single rule\.
+  + `wildcard` \- You set the path to `wildcard` if you want to transition specific objects to the IA storage class based on file name and/or file type\. You can use one or more wildcards, represented by an asterisk \(\*\)\. Each wildcard represents any combination of zero or more characters\. For example, `"path": [ {"wildcard": "Football/*.ts"} ],` applies to all files in the `Football` folder that match the pattern of `*.ts` \(such as filename\.ts, filename1\.ts, and filename123456\.ts\)\. You can include up to 10 `wildcard` paths in a single rule\. 
++ `days_since_create`: Always set to `"numeric": [">=" , 30]`\. 
++ `action`: Always set to `ARCHIVE`\.
+
 ## Example<a name="policies-object-lifecycle-components-example"></a>
 
 Suppose that a container named `LiveEvents` has four subfolders: `Football`, `Baseball`, `Basketball`, and `AwardsShow`\. The object lifecycle policy assigned to the `LiveEvents` folder might look like this:
@@ -126,7 +162,18 @@ Suppose that a container named `LiveEvents` has four subfolders: `Football`, `Ba
                 ]
             },
             "action": "EXPIRE"
-        }
+        },
+        {
+                "definition": {
+                    "path": [
+                        {"prefix": "Program/"}
+                    ],
+                    "days_since_create": [
+                        {"numeric": [">=" , 30]}
+                    ]
+                },
+                "action": "ARCHIVE"
+            }
     ]
 }
 ```
@@ -137,3 +184,6 @@ The preceding policy specifies the following:
 + The third rule instructs the service to delete objects that are stored anywhere in the `LiveEvents` container after they are older than 40 days\. This rule applies to objects stored directly in the `LiveEvents` container, as well as objects stored in any of the container's four subfolders\.
 + The fourth rule instructs the service to delete objects in the `Football` folder that match the pattern `*.ts` after they are older than 20 days\. 
 + The fifth rule instructs the service to delete objects in the `Football` folder that match the pattern `index*.m3u8` after they are older than 15 seconds\. MediaStore deletes these files 16 seconds after they are placed in the container\.
++ The sixth rule instructs the service to move objects in the `Program` folder to the IA storage class after they are 30 days old\.
+
+For more examples of object lifecycle policies, see [Example object lifecycle policies](policies-object-lifecycle-examples.md)\.

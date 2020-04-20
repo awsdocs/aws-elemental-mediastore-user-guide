@@ -1,6 +1,6 @@
 # Viewing an object lifecycle policy<a name="policies-object-lifecycle-view"></a>
 
-An object lifecycle policy specifies how long objects should be stored in a container\. 
+An object lifecycle policy specifies how long objects should be kept in a container\. 
 
 **To view an object lifecycle policy \(console\)**
 

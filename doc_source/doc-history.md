@@ -4,6 +4,7 @@ The following table describes the documentation for this release of AWS Elementa
 
 | Change | Description | Date | 
 | --- |--- |--- |
+| [Lifecycle transition rules](policies-object-lifecycle-components.md) | You can now add a lifecycle transition rule to your object lifecycle policy that sets objects to be moved to the infrequent access \(IA\) storage class after they reach a certain age\. | April 20, 2020 | 
 | [Empty container](objects-empty-container.md) | You can now delete all objects within a container at once\. | April 7, 2020 | 
 | [Support for Amazon CloudWatch metrics](policies-metric.md) | You can set a metric policy to dictate which metrics MediaStore sends to CloudWatch\. | March 30, 2020 | 
 | [Wildcards in delete object rules](policies-object-lifecycle-components.md#policies-object-lifecycle-components-rules) | In an object lifecycle policy, you can now use a wildcard in a delete object rule\. This allows you to specify files based on their filename or extension that you want the service to delete after a certain number of days\. | December 20, 2019 | 
