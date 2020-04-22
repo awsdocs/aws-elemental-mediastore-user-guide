@@ -82,8 +82,6 @@ Once an object has moved to the IA storage class, you can't move it back to the 
 An example of a lifecycle transition rule looks like this:
 
 ```
-{ 
-    "rules": [
         {
             "definition": {
                 "path": [ 
@@ -95,8 +93,6 @@ An example of a lifecycle transition rule looks like this:
             },
             "action": "ARCHIVE"
         }
-    ]
-}
 ```
 
 Lifecycle transition rules have three parts:
