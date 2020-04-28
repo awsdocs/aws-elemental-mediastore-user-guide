@@ -122,6 +122,7 @@ Amazon's trademarks and trade dress may not be used in
    + [Tagging AWS Elemental MediaStore resources](tagging.md)
 + [Working with content delivery networks (CDNs)](cdns.md)
    + [Allowing Amazon CloudFront to access your AWS Elemental MediaStore container](cdns-allowing-cloudfront-to-access-mediastore.md)
+   + [AWS Elemental MediaStore's interaction with HTTP caches](cdn-mediastore-interaction-with-http-caches.md)
 + [Quotas in AWS Elemental MediaStore](quotas.md)
 + [AWS Elemental MediaStore related information](resources.md)
 + [Document history for user guide](doc-history.md)

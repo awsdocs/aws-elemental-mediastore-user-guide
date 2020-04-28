@@ -6,3 +6,4 @@ You can use a content delivery network \(CDN\) such as [Amazon CloudFront](https
 
 **Topics**
 + [Allowing Amazon CloudFront to access your AWS Elemental MediaStore container](cdns-allowing-cloudfront-to-access-mediastore.md)
++ [AWS Elemental MediaStore's interaction with HTTP caches](cdn-mediastore-interaction-with-http-caches.md)
