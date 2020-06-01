@@ -1,5 +1,7 @@
 # Quotas in AWS Elemental MediaStore<a name="quotas"></a>
 
+The Service Quotas console provides information about AWS Elemental MediaStore quotas\. Along with viewing the default quotas, you can use the Service Quotas console to [request quota increases](https://console.aws.amazon.com/servicequotas/home?region=us-east-1#!/services/mediastore/quotas) for adjustable quotas\.
+
 The following table describes quotas, formerly referred to as *limits*, in AWS Elemental MediaStore\. 
 
 

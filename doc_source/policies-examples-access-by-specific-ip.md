@@ -8,26 +8,29 @@ The `Condition` block uses the `IpAddress` and `NotIpAddress` conditions and the
 
 ```
 {
-  "Version": "2012-10-17",
-  "Statement": [
-    {
-      "Sid": "AccessBySpecificIPAddress",
-      "Effect": "Allow",
-      "Action": [
-        "mediastore:GetObject",
-        "mediastore:DescribeObject",
-      ],
-      "Principal": "*",
-      "Resource": "arn:aws:mediastore:<region>:<owner acct number>:container/<container name>/*",
-      "Condition": {
-        "IpAddress": {
-          "aws:SourceIp": "198.51.100.0/24"
-        },
-        "NotIpAddress": {
-          "aws:SourceIp": "198.51.100.188/32"
-        },
-      },
-    },
-  ],
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "AccessBySpecificIPAddress",
+            "Effect": "Allow",
+            "Action": [
+                "mediastore:GetObject",
+                "mediastore:DescribeObject"
+            ],
+            "Principal": "*",
+            "Resource": "arn:aws:mediastore:<region>:<owner acct number>:container/<container name>/*",
+            "Condition": {
+                "IpAddress": {
+                    "aws:SourceIp": [
+                        "192.0.2.0/24",
+                        "203.0.113.0/24"
+                    ]
+                },
+                "NotIpAddress": {
+                    "aws:SourceIp": "198.51.100.0/24"
+                }
+            }
+        }
+    ]
 }
 ```

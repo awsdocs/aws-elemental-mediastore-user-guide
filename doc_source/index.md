@@ -92,7 +92,6 @@ Amazon's trademarks and trade dress may not be used in
    + [Deleting objects](objects-delete-main.md)
       + [Deleting an object](objects-delete.md)
       + [Emptying a container](objects-empty-container.md)
-+ [AWS CLI commands for AWS Elemental MediaStore](cli-commands.md)
 + [Security in AWS Elemental MediaStore](security.md)
    + [Data protection in AWS Elemental MediaStore](data-protection.md)
    + [Identity and access management in AWS Elemental MediaStore](security-iam.md)
@@ -126,4 +125,4 @@ Amazon's trademarks and trade dress may not be used in
 + [Quotas in AWS Elemental MediaStore](quotas.md)
 + [AWS Elemental MediaStore related information](resources.md)
 + [Document history for user guide](doc-history.md)
-+ [AWS Glossary](glossary.md)
++ [AWS glossary](glossary.md)
