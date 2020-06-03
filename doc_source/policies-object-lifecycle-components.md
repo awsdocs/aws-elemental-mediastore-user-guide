@@ -41,7 +41,9 @@ Objects that are subject to a transient data rule are not included in a `list-it
 
 ### Delete object<a name="policies-object-lifecycle-components-rules-days"></a>
 
-A delete object rule sets objects to expire within days\. An example of two rules for deleting objects looks like this:
+A delete object rule sets objects to expire within days\. This type of rule applies to all objects in the container, even if they were added to the container before the policy was created\. It takes up to 20 minutes for MediaStore to apply the new policy, but it can take up to 24 hours for the objects to clear from the container\.
+
+An example of two rules for deleting objects looks like this:
 
 ```
         {
@@ -78,6 +80,8 @@ For delete object rules \(objects expire within days\), there might be a slight 
 A lifecycle transition rule sets objects to be moved to the infrequent access \(IA\) storage class after they reach a certain age, measured in days\. Objects that are stored in the IA storage class have different rates for storage and retrieval than objects that are stored in the standard storage class\. For more information, see [MediaStore Pricing](https://aws.amazon.com/mediastore/pricing/)\.
 
 Once an object has moved to the IA storage class, you can't move it back to the standard storage class\.
+
+The lifecycle transition rule applies to all objects in the container, even if they were added to the container before the policy was created\. It takes up to 20 minutes for MediaStore to apply the new policy, but it can take up to 24 hours for the objects to clear from the container\.
 
 An example of a lifecycle transition rule looks like this:
 
