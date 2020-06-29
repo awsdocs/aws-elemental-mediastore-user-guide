@@ -13,7 +13,7 @@ Container
 A namespace that holds objects\. A container has an endpoint that you can use for writing and retrieving objects and attaching access policies\.
 
 Endpoint  
-An entry point to the MediaStore service, given as an HTTP/S root URL\.
+An entry point to the MediaStore service, given as an HTTPS root URL\.
 
 ETag  
 An [entity tag](https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.19), which is a hash of the object data\.

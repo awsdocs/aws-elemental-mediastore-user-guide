@@ -21,6 +21,6 @@ When you create a container, AWS Elemental MediaStore automatically attaches the
 }
 ```
 
-The policy is built into the service, so you don’t have to create it\. The default policy can’t be changed; however, you can edit a container’s policy\.
+The policy is built into the service, so you don’t have to create it\. However, you can [edit the policy](policies-edit.md) on the container if the permissions in the default policy don't align with the permissions that you want to use for the container\.
 
 The default policy that is assigned to all new containers allows access to all MediaStore operations on the container\. It specifies that this access has the condition of requiring HTTPS for the operations\.

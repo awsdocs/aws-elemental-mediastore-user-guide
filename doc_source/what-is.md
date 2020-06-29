@@ -11,4 +11,4 @@ MediaStore is a great choice for storing fragmented video files when you need st
 + [Related services](what-is-related-services.md)
 + [Accessing AWS Elemental MediaStore](what-is-accessing.md)
 + [Pricing for AWS Elemental MediaStore](what-is-pricing.md)
-+ [Regions for AWS Elemental MediaStore](what-is-regions.md)
++ [Regions and endpoints for AWS Elemental MediaStore](what-is-regions.md)

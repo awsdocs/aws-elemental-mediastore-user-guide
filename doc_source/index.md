@@ -19,7 +19,7 @@ Amazon's trademarks and trade dress may not be used in
    + [Related services](what-is-related-services.md)
    + [Accessing AWS Elemental MediaStore](what-is-accessing.md)
    + [Pricing for AWS Elemental MediaStore](what-is-pricing.md)
-   + [Regions for AWS Elemental MediaStore](what-is-regions.md)
+   + [Regions and endpoints for AWS Elemental MediaStore](what-is-regions.md)
 + [Setting up AWS Elemental MediaStore](setting-up.md)
    + [Signing up for AWS](aws-sign-up.md)
    + [Creating an admin IAM user](IAM-user-create.md)
