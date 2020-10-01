@@ -9,7 +9,7 @@ MediaStore supports chunked transfer of objects, which reduces latency by making
 Object sizes can't exceed 25 MB for standard upload availability and 10 MB for streaming upload availability\.
 
 **Note**  
-Object file names can contain only letters, numbers, periods \(\.\), underscores \(\_\), tildes \(\~\), and hyphens \(\-\)\. 
+Object file names can contain only letters, numbers, periods \(\.\), underscores \(\_\), tildes \(\~\), hyphens \(\-\), equal signs \(=\), and colons \(:\)\. 
 
 **To upload an object \(console\)**
 

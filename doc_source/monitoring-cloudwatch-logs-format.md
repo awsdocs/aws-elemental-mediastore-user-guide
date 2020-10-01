@@ -18,6 +18,7 @@ The access log files consist of a sequence of JSON\-formatted log records, where
   "Source": "192.0.2.3",
   "HTTPStatus": 200,
   "TurnAroundTime': 7,
+  "ExpiresAt": "2018-12-13T12:22:36Z"
 }
  {
   "Path": "/FootballMatch/West",
@@ -34,6 +35,7 @@ The access log files consist of a sequence of JSON\-formatted log records, where
   "Source": "198.51.100.15",
   "HTTPStatus": 400,
   "TurnAroundTime": 1,
+  "ExpiresAt": null
 }
 ```
 
@@ -54,6 +56,9 @@ The name of the container that received the request\.
 ErrorCode  
 The MediaStore error code \(such as `InternalServerError`\)\. If no error occurred, the `-` character appears\. An error code might appear even if the status code is 200 \(indicating a closed connection or an error after the server started streaming the response\)\.
 
+ExpiresAt  
+The object's expiration date and time\. This value is based on the expiration age set by a [transient data rule](policies-object-lifecycle-components.md#policies-object-lifecycle-components-rules-seconds-inline) in the lifecycle policy that is applied to the container\. The value is `ISO-8601` date time and is based on the system clock of the host that served the request\. If the lifecycle policy doesn't have a transient data rule that applies to the object, or if there is no lifecylce policy applied to the container, the value of this field is `null`\. This field applies only to the following operations: `PutObject`, `GetObject`, `DescribeObject`, and `DeleteObject`\.
+
 HTTPStatus  
 The numeric HTTP status code of the response\.
 
@@ -64,7 +69,7 @@ Path
 The path within the container where the object is stored\. If the operation does not take a path parameter, the `-` character appears\. 
 
 ReceivedTime  
-The time of day when the request was received\. The value is `ISO86-1` date time and is based on the system clock of the host that served the request\.
+The time of day when the request was received\. The value is `ISO-8601` date time and is based on the system clock of the host that served the request\.
 
 Requester  
 The user Amazon Resource Name \(ARN\) of the account that was used to make the request\. For unauthenticated requests, this value is `anonymous`\. If the request fails before authentication is complete, this field might be missing from the log\. For such requests, the `ErrorCode` might identify the authorization issue\.
