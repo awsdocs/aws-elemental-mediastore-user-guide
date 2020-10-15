@@ -2,7 +2,10 @@
 
 The Service Quotas console provides information about AWS Elemental MediaStore quotas\. Along with viewing the default quotas, you can use the Service Quotas console to [request quota increases](https://console.aws.amazon.com/servicequotas/home?region=us-east-1#!/services/mediastore/quotas) for adjustable quotas\.
 
-The following table describes quotas, formerly referred to as *limits*, in AWS Elemental MediaStore\. 
+The following table describes quotas, formerly referred to as *limits*, in AWS Elemental MediaStore\. Quotas are the maximum number of service resources or operations for your AWS account\.
+
+**Note**  
+To assign quotas to individual containers within your account, contact AWS Support or your account manager\. This option can help you divide up the account\-level limits among your containers, to prevent one container from using up your entire quota\.
 
 
 ****  
@@ -22,4 +25,4 @@ The following table describes quotas, formerly referred to as *limits*, in AWS E
 |  [PutObject](https://docs.aws.amazon.com/mediastore/latest/apireference/API_objstore_PutObject.html) – Standard Upload Availability  |  100 TPS  |  The maximum number of operation requests that you can make per second\. Additional requests are throttled\. You can [request a quota increase](https://console.aws.amazon.com/servicequotas/home?region=us-east-1#!/services/mediastore/quotas)\. In the request, specify the requested TPS and average object size\.  | 
 | [PutObject](https://docs.aws.amazon.com/mediastore/latest/apireference/API_objstore_PutObject.html) – Streaming Upload Availability | 10 TPS |  The maximum number of operation requests that you can make per second\. Additional requests are throttled\. You can [request a quota increase](https://console.aws.amazon.com/servicequotas/home?region=us-east-1#!/services/mediastore/quotas)\. In the request, specify the requested TPS and average object size\.  | 
 | Rules in an Object Lifecycle Policy | 10 | The maximum number of rules that you can include in an object lifecycle policy\. | 
-| Rules in a Metric Policy | 5 | The maximum number of rules that you can include in a metric policy\. You can [request a quota increase](https://console.aws.amazon.com/servicequotas/home?region=us-east-1#!/services/mediastore/quotas)\. | 
+| Rules in a Metric Policy | 5 |  The maximum number of rules that you can include in a metric policy\. You can [request a quota increase](https://console.aws.amazon.com/servicequotas/home?region=us-east-1#!/services/mediastore/quotas)\.  | 
