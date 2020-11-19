@@ -8,7 +8,11 @@ With IAM identity\-based policies, you can specify allowed or denied actions and
 
 ### Actions<a name="security_iam_service-with-iam-id-based-policies-actions"></a>
 
-The `Action` element of an IAM identity\-based policy describes the specific action or actions that will be allowed or denied by the policy\. Policy actions usually have the same name as the associated AWS API operation\. The action is used in a policy to grant permissions to perform the associated operation\. 
+Administrators can use AWS JSON policies to specify who has access to what\. That is, which **principal** can perform **actions** on what **resources**, and under what **conditions**\.
+
+The `Action` element of a JSON policy describes the actions that you can use to allow or deny access in a policy\. Policy actions usually have the same name as the associated AWS API operation\. There are some exceptions, such as *permission\-only actions* that don't have a matching API operation\. There are also some operations that require multiple actions in a policy\. These additional actions are called *dependent actions*\.
+
+Include actions in a policy to grant permissions to perform the associated operation\.
 
 Policy actions in MediaStore use the following prefix before the action: `mediastore:`\. For example, to grant someone permission to create a new container with the MediaStore `CreateContainer` API operation, you include the `mediastore:CreateContainer` action in their policy\. Policy statements must include either an `Action` or `NotAction` element\. MediaStore defines its own set of actions that describe tasks that you can perform with this service\.
 
@@ -30,7 +34,15 @@ To see a list of MediaStore actions, see [Actions Defined by AWS Elemental Media
 
 ### Resources<a name="security_iam_service-with-iam-id-based-policies-resources"></a>
 
-The `Resource` element specifies the object or objects to which the action applies\. Statements must include either a `Resource` or a `NotResource` element\. You specify a resource using an ARN or using the wildcard \(\*\) to indicate that the statement applies to all resources\.
+Administrators can use AWS JSON policies to specify who has access to what\. That is, which **principal** can perform **actions** on what **resources**, and under what **conditions**\.
+
+The `Resource` JSON policy element specifies the object or objects to which the action applies\. Statements must include either a `Resource` or a `NotResource` element\. As a best practice, specify a resource using its [Amazon Resource Name \(ARN\)](https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html)\. You can do this for actions that support a specific resource type, known as *resource\-level permissions*\.
+
+For actions that don't support resource\-level permissions, such as listing operations, use a wildcard \(\*\) to indicate that the statement applies to all resources\.
+
+```
+"Resource": "*"
+```
 
 The MediaStore container resource has the following ARN:
 
@@ -66,25 +78,26 @@ MediaStore does not provide any service\-specific condition keys, but it does su
 
 ### Examples<a name="security_iam_service-with-iam-id-based-policies-examples"></a>
 
-For examples of MediaStore identity\-based policies, see [AWS Elemental MediaStore Identity\-Based Policy Examples](security_iam_id-based-policy-examples.md)\.
+For examples of MediaStore identity\-based policies, see [AWS Elemental MediaStore identity\-based policy examples](security_iam_id-based-policy-examples.md)\.
 
-## MediaStore Resource\-based policies<a name="security_iam_service-with-iam-resource-based-policies"></a>
+## MediaStore resource\-based policies<a name="security_iam_service-with-iam-resource-based-policies"></a>
 
 Resource\-based policies are JSON policy documents that specify what actions a specified principal can perform on the MediaStore resource and under what conditions\. MediaStore supports resource\-based permissions policies for MediaStore containers\. Resource\-based policies let you grant usage permission to other accounts on a per\-resource basis\. You can also use a resource\-based policy to allow an AWS service to access your MediaStore containers\.
 
 To enable cross\-account access, you can specify an entire account or IAM entities in another account as the [principal in a resource\-based policy](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_principal.html)\. Adding a cross\-account principal to a resource\-based policy is only half of establishing the trust relationship\. When the principal and the resource are in different AWS accounts, you must also grant the principal entity permission to access the resource\. Grant permission by attaching an identity\-based policy to the entity\. However, if a resource\-based policy grants access to a principal in the same account, no additional identity\-based policy is required\. For more information, see [How IAM Roles Differ from Resource\-based Policies ](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_compare-resource-policies.html)in the *IAM User Guide*\.
 
-The MediaStore service supports only one type of resource\-based policy called a container policy, which is attached to a container\. This policy defines which principal entities \(accounts, users, roles, and federated users\) can perform actions on the container\.
-
-To learn how to attach a resource\-based policy to a container, see [Container policies in AWS Elemental MediaStore](policies.md)\.
+**Note**  
+MediaStore also supports container policies that define which principal entities \(accounts, users, roles, and federated users\) can perform actions on the container\. For more information, see [Container policies](policies.md)\. 
 
 ### Examples<a name="security_iam_service-with-iam-resource-based-policies-examples"></a>
 
-For examples of MediaStore resource\-based policies, see [Example container policies](policies-examples.md),
+For examples of MediaStore resource\-based policies, see [AWS Elemental MediaStore resource\-based policy examples](security_iam_resource-based-policy-examples.md)\.
 
 ## Authorization based on MediaStore tags<a name="security_iam_service-with-iam-tags"></a>
 
-MediaStore doesn't support tagging resources or controlling access based on tags\.
+You can attach tags to MediaStore resources or pass tags in a request to MediaStore\. To control access based on tags, you provide tag information in the [condition element](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition.html) of a policy using the `mediastore:ResourceTag/key-name`, `aws:RequestTag/key-name`, or `aws:TagKeys` condition keys\. You can only tag MediaStore resources using the API\. For more information about how to assign a tag to a resource, see [TagResource](https://docs.aws.amazon.com/mediastore/latest/apireference/API_TagResource.html) in the *AWS Elemental MediaStore API Reference*\. 
+
+To view an example identity\-based policy for limiting access to a resource based on the tags on that resource, see [Allow or deny actions based on tags on MediaStore resources](security_iam_resource-based-policy-examples.md#iam-policy-examples-for-mediastore-tag-based-access)\.
 
 ## MediaStore IAM roles<a name="security_iam_service-with-iam-roles"></a>
 

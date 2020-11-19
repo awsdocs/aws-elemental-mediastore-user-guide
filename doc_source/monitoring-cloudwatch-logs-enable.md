@@ -9,7 +9,7 @@ There is no extra charge for enabling access logging on an MediaStore container\
 + In the AWS CLI, use the `start-access-logging` command:
 
   ```
-  aws mediastore start-access-logging --container-name LiveEvents
+  aws mediastore start-access-logging --container-name LiveEvents --region us-west-2
   ```
 
   This command has no return value\.

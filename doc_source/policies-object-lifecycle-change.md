@@ -41,7 +41,7 @@ You can't edit an existing object lifecycle policy\. However, you can change an 
 1. In the AWS CLI, use the `put-lifecycle-policy` command:
 
    ```
-   aws mediastore put-lifecycle-policy --container-name LiveEvents --lifecycle-policy file://LiveEvents2LifecyclePolicy
+   aws mediastore put-lifecycle-policy --container-name LiveEvents --lifecycle-policy file://LiveEvents2LifecyclePolicy --region us-west-2
    ```
 
    This command has no return value\. The service attaches the specified policy to the container, replacing the previous policy\.

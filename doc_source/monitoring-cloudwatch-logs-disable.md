@@ -6,7 +6,7 @@ When you disable access logging on a container, AWS Elemental MediaStore stops s
 + In the AWS CLI, use the `stop-access-logging` command:
 
   ```
-  aws mediastore stop-access-logging --container-name LiveEvents
+  aws mediastore stop-access-logging --container-name LiveEvents --region us-west-2
   ```
 
   This command has no return value\.

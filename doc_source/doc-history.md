@@ -4,6 +4,7 @@ The following table describes the documentation for this release of AWS Elementa
 
 | Change | Description | Date | 
 | --- |--- |--- |
+| [Tag\-based access control](security_iam_service-with-iam.md#security_iam_service-with-iam-tags) | You can now set access permissions for a resource based tags that you've assigned to the resource\. | November 18, 2020 | 
 | [ExpiresAt field](monitoring-cloudwatch-logs-format.md) | Access logs now include an `ExpiresAt` field that indicates the object's expiration date and time based on transient data rules in the container's lifecycle policy\.  | July 16, 2020 | 
 | [Lifecycle transition rules](policies-object-lifecycle-components.md) | You can now add a lifecycle transition rule to your object lifecycle policy that sets objects to be moved to the infrequent access \(IA\) storage class after they reach a certain age\. | April 20, 2020 | 
 | [Empty container](objects-empty-container.md) | You can now delete all objects within a container at once\. | April 7, 2020 | 

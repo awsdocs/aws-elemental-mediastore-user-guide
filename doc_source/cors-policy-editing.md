@@ -39,7 +39,7 @@ Cross\-origin resource sharing \(CORS\) defines a way for client web application
 1. In the AWS CLI, use the `put-cors-policy` command\.
 
    ```
-   aws mediastore put-cors-policy --container-name ExampleContainer --cors-policy file://corsPolicy2.json
+   aws mediastore put-cors-policy --container-name ExampleContainer --cors-policy file://corsPolicy2.json --region us-west-2
    ```
 
    This command has no return value\.

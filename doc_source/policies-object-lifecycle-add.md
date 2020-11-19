@@ -56,7 +56,7 @@ For delete object rules \(objects expire within days\), there might be a slight 
 1. In the AWS CLI, use the `put-lifecycle-policy` command:
 
    ```
-   aws mediastore put-lifecycle-policy --container-name LiveEvents --lifecycle-policy file://LiveEventsLifecyclePolicy.json
+   aws mediastore put-lifecycle-policy --container-name LiveEvents --lifecycle-policy file://LiveEventsLifecyclePolicy.json --region us-west-2
    ```
 
    This command has no return value\. The service attaches the specified policy to the container\. 

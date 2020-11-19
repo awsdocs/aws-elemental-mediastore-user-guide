@@ -37,7 +37,7 @@ Transient data rules have three parts:
 For transient data rules \(objects expire within seconds\), there is no lag between the expiration of an object and the deletion of the object\.
 
 **Note**  
-Objects that are subject to a transient data rule are not included in a `list-items` response\.
+Objects that are subject to a transient data rule are not included in a `list-items` response\. In addition, objects that expire because of a transient data rule do not emit a CloudWatch event when they expire\.
 
 ### Delete object<a name="policies-object-lifecycle-components-rules-days"></a>
 

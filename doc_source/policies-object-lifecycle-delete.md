@@ -18,7 +18,7 @@ When you delete an object lifecycle policy, it takes up to 20 minutes for the se
 + In the AWS CLI, use the `delete-lifecycle-policy` command:
 
   ```
-  aws mediastore delete-lifecycle-policy --container-name LiveEvents
+  aws mediastore delete-lifecycle-policy --container-name LiveEvents --region us-west-2
   ```
 
   This command has no return value\. 

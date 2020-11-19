@@ -96,7 +96,7 @@ Amazon's trademarks and trade dress may not be used in
    + [Data protection in AWS Elemental MediaStore](data-protection.md)
    + [Identity and access management in AWS Elemental MediaStore](security-iam.md)
       + [How AWS Elemental MediaStore works with IAM](security_iam_service-with-iam.md)
-      + [AWS Elemental MediaStore Identity-Based Policy Examples](security_iam_id-based-policy-examples.md)
+      + [AWS Elemental MediaStore identity-based policy examples](security_iam_id-based-policy-examples.md)
       + [AWS Elemental MediaStore resource-based policy examples](security_iam_resource-based-policy-examples.md)
       + [Troubleshooting AWS Elemental MediaStore identity and access](security_iam_troubleshoot.md)
    + [Logging and monitoring in AWS Elemental MediaStore](incident-response.md)

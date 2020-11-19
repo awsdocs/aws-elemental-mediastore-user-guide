@@ -14,7 +14,7 @@ An object lifecycle policy specifies how long objects should be kept in a contai
 + In the AWS CLI, use the `get-lifecycle-policy` command:
 
   ```
-  aws mediastore get-lifecycle-policy --container-name LiveEvents
+  aws mediastore get-lifecycle-policy --container-name LiveEvents --region us-west-2
   ```
 
   The following example shows the return value:
