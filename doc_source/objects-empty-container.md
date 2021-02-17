@@ -10,4 +10,4 @@ You can empty a container to delete all objects that are stored within the conta
 
 1. Choose **Empty container**\. A confirmation message appears\.
 
-1. Type **empty** in the field, then choose **Empty**\.
+1. Confirm that you want to empty the container by entering the container name into the text field, then choose **Empty**\.

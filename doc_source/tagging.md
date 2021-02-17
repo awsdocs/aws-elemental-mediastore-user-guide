@@ -32,6 +32,8 @@ The following basic naming and usage conventions apply to using tags with AWS El
 
 ## Managing tags<a name="tagging-add-edit-delete"></a>
 
+
+
 Tags are made up of the `Key` and `Value` properties on a resource\. You can use the AWS CLI or the MediaStore API to add, edit, or delete the values for these properties\. For information about working with tags, see the following sections in the *AWS Elemental MediaStore API Reference*:
 + [CreateContainer](https://docs.aws.amazon.com/mediastore/latest/apireference/API_CreateContainer.html)
 + [ListTagsForResource](https://docs.aws.amazon.com/mediastore/latest/apireference/API_ListTagsForResource.html)
