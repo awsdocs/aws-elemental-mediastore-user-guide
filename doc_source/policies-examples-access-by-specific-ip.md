@@ -22,12 +22,11 @@ The `Condition` block uses the `IpAddress` and `NotIpAddress` conditions and the
             "Condition": {
                 "IpAddress": {
                     "aws:SourceIp": [
-                        "192.0.2.0/24",
-                        "203.0.113.0/24"
+                        "198.51.100.0/24"
                     ]
                 },
                 "NotIpAddress": {
-                    "aws:SourceIp": "198.51.100.0/24"
+                    "aws:SourceIp": "198.51.100.188/32"
                 }
             }
         }

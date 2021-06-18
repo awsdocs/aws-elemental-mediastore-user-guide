@@ -1,7 +1,7 @@
 # AWS Elemental MediaStore User Guide
 
 -----
-*****Copyright &copy; 2020 Amazon Web Services, Inc. and/or its affiliates. All rights reserved.*****
+*****Copyright &copy; Amazon Web Services, Inc. and/or its affiliates. All rights reserved.*****
 
 -----
 Amazon's trademarks and trade dress may not be used in 
@@ -45,8 +45,6 @@ Amazon's trademarks and trade dress may not be used in
          + [Example container policy: Cross-account read access over HTTPS](policies-examples-cross-acccount-https.md)
          + [Example container policy: Cross-account read access to a role](policies-examples-cross-acccount-read.md)
          + [Example container policy: Cross-account full access to a role](policies-examples-cross-acccount-full.md)
-         + [Example container policy: Post access to an AWS service to a folder](policies-examples-post-access-folder.md)
-         + [Example container policy: Post access to an AWS service to multiple folders](policies-examples-post-access-multiple-folders.md)
          + [Example container policy: Access restricted to specific IP addresses](policies-examples-access-by-specific-ip.md)
    + [Cross-origin resource sharing (CORS) policies in AWS Elemental MediaStore](cors-policy.md)
       + [CORS use-case scenarios](cors-policy-use-case-scenarios.md)
