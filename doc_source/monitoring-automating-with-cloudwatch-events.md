@@ -1,6 +1,9 @@
 # CloudWatch Events<a name="monitoring-automating-with-cloudwatch-events"></a>
 
-Amazon CloudWatch Events enables you to automate your AWS services and respond automatically to system events such as application availability issues or resource changes\. Events from AWS services are delivered to CloudWatch Events in near real time\. You can write simple rules to indicate which events are of interest to you, and what automated actions to take when an event matches a rule\.
+Amazon CloudWatch Events enables you to automate your AWS services and respond automatically to system events such as application availability issues or resource changes\. You can write simple rules to indicate which events are of interest to you, and what automated actions to take when an event matches a rule\.
+
+**Important**  
+Typically, AWS services deliver event notifications to CloudWatch Events in seconds but can sometimes take a minute or longer\.
 
 When a file is uploaded to a container or removed from a container, two events are fired in succession in the CloudWatch service:
 

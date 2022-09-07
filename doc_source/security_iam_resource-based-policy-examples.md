@@ -7,10 +7,7 @@ MediaStore also supports container policies that define which principal entities
 
 ## Allow read access to all MediaStore resources<a name="iam-policy-examples-for-mediastore-actions-read-only-all-resources"></a>
 
-To access the AWS Elemental MediaStore console, you must have a policy that defines which actions you are allowed to take on MediaStore resources in your AWS account\. The IAM policy below provides the following permissions:
-+ The section for the `mediastore:List*` and `mediastore:Describe*` actions allow read\-only access to all resources that you create in MediaStore\.
-+ The section for the `cloudwatch:GetMetricData` action allows the service to obtain metrics from Amazon CloudWatch\. This portion of the policy is required\.
-+ The section for the `iam:PassRole` action allows IAM to *pass* a role to MediaStore that allows the service to communicate with IAM in order to assume a role on behalf of the service\. This allows the service to assume the role later and perform actions on your behalf\. This portion of the policy is required\.
+To access the AWS Elemental MediaStore console, you must have a policy that defines which actions you are allowed to take on MediaStore resources in your AWS account\. The IAM policy below provides the following permissions\. The section for the `mediastore:List*` and `mediastore:Describe*` actions allows read\-only access to all resources that you create in MediaStore\.
 
 ```
 {
@@ -22,22 +19,9 @@ To access the AWS Elemental MediaStore console, you must have a policy that defi
                 "mediastore:Describe*"
             ],
             "Effect": "Allow",
-            "Resource": "*"
-        },
-        {
-            "Action": [
-                "cloudwatch:GetMetricData"
-            ],
-            "Effect": "Allow",
-            "Resource": "*"
-        },
-        {
-            "Action": [
-                "iam:PassRole"
-            ],
-            "Effect": "Allow",
-            "Resource": "*"
+            "Resource": "arn:aws:mediastore:*:*:*"
         }
+        
     ]
 }
 ```
@@ -46,8 +30,7 @@ To access the AWS Elemental MediaStore console, you must have a policy that defi
 
 Every user of MediaStore must have a policy that defines permissions on MediaStore resources\. The IAM policy below provides the following permissions:
 + The section for the `mediastore:*` action allows all actions on all resources that you create in MediaStore\.
-+ The section for the `cloudwatch:GetMetricData` action allows the service to obtain metrics from Amazon CloudWatch\. This portion of the policy is required\.
-+ The section for the `iam:PassRole` action allows IAM to *pass* a role to MediaStore that allows the service to communicate with IAM in order to assume a role on behalf of the service\. This allows the service to assume the role later and perform actions on your behalf\. This portion of the policy is required\.
++ The section for the `iam:PassRole` action grants permission to pass the MediaStoreAccessLogs IAM role to MediaStore\. This allows the service to assume the role later and publish CloudWatch Logs into your account\. This portion of the policy is required to enable access logging\.
 
 ```
 {
@@ -58,21 +41,15 @@ Every user of MediaStore must have a policy that defines permissions on MediaSto
                 "mediastore:*"
             ],
             "Effect": "Allow",
-            "Resource": "*"
+            "Resource": "arn:aws:mediastore:*:*:*"
         },
-        {
-            "Action": [
-                "cloudwatch:GetMetricData"
-            ],
-            "Effect": "Allow",
-            "Resource": "*"
-        },
+      
         {
             "Action": [
                 "iam:PassRole"
             ],
             "Effect": "Allow",
-            "Resource": "*"
+            "Resource": "arn:aws:iam:*:*:role/MediaStoreAccessLogs"
         }
     ]
 }
@@ -98,7 +75,7 @@ The IAM policy below provides the following permissions:
         "Action": [
             "mediastore:DeleteContainer"
         ],
-        "Resource": "*",
+        "Resource": "arn:aws:mediastore:*:*:container/*",
         "Condition": {
             "StringEquals": {
                 "aws:ResourceTag/company": "ITW",

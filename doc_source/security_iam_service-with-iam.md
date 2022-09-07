@@ -38,12 +38,6 @@ Administrators can use AWS JSON policies to specify who has access to what\. Tha
 
 The `Resource` JSON policy element specifies the object or objects to which the action applies\. Statements must include either a `Resource` or a `NotResource` element\. As a best practice, specify a resource using its [Amazon Resource Name \(ARN\)](https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html)\. You can do this for actions that support a specific resource type, known as *resource\-level permissions*\.
 
-For actions that don't support resource\-level permissions, such as listing operations, use a wildcard \(\*\) to indicate that the statement applies to all resources\.
-
-```
-"Resource": "*"
-```
-
 The MediaStore container resource has the following ARN:
 
 ```
@@ -58,16 +52,10 @@ For example, to specify the `AwardsShow` container in your statement, use the fo
 "Resource": "arn:aws:mediastore:us-east-1:111122223333:container/AwardsShow"
 ```
 
-To specify all instances that belong to a specific account, use the wildcard \(\*\):
+To specify all instances that belong to a specific account, use the wildcard \(\*\)\. This is required to call ListContainers:
 
 ```
 "Resource": "arn:aws:mediastore:us-east-1:111122223333:container/*"
-```
-
-Some MediaStore actions, such as those for creating resources, can't be performed on a specific resource\. In those cases, you must use the wildcard \(\*\):
-
-```
-"Resource": "*"
 ```
 
 To see a list of MediaStore resource types and their ARNs, see [Resources Defined by AWS Elemental MediaStore](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_awselementalmediastore.html#awselementalmediastore-resources-for-iam-policies) in the *IAM User Guide*\. To learn with which actions you can specify the ARN of each resource, see [Actions Defined by AWS Elemental MediaStore](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_awselementalmediastore.html#awselementalmediastore-actions-as-permissions)\.
